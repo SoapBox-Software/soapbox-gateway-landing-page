@@ -40,7 +40,7 @@ const ModuleCard = ({ title, description, url, icon: Icon, comingSoon }: ModuleC
       <Button
         onClick={handleAccess}
         disabled={comingSoon}
-        className={`w-full font-semibold ${
+        className={`w-full font-semibold rounded-lg ${
           comingSoon
             ? "bg-muted text-muted-foreground cursor-not-allowed"
             : "gradient-green text-white hover:gradient-green-hover"

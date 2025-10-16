@@ -32,7 +32,7 @@ import {
   Bell,
   User,
   LogOut,
-  RefreshCcw,
+  Users,
 } from "lucide-react";
 import logo from "@/assets/logo.png";
 
@@ -206,23 +206,70 @@ const Dashboard = () => {
 
             {/* Right Side Actions */}
             <div className="flex items-center space-x-4">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-white hover:bg-[hsl(var(--sidebar-accent))]"
-              >
-                <RefreshCcw className="h-4 w-4 mr-2" />
-                <span className="hidden sm:inline">Switch User</span>
-              </Button>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-white hover:bg-[hsl(var(--sidebar-accent))]"
+                  >
+                    <Users className="h-5 w-5" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56">
+                  <DropdownMenuItem>
+                    <User className="mr-2 h-4 w-4" />
+                    Switch to Admin User
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <User className="mr-2 h-4 w-4" />
+                    Switch to Manager User
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                    <User className="mr-2 h-4 w-4" />
+                    Switch to Employee User
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
 
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:bg-[hsl(var(--sidebar-accent))] relative"
-              >
-                <Bell className="h-5 w-5" />
-                <span className="absolute top-1 right-1 h-2 w-2 bg-red-500 rounded-full"></span>
-              </Button>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-white hover:bg-[hsl(var(--sidebar-accent))] relative"
+                  >
+                    <Bell className="h-5 w-5" />
+                    <span className="absolute top-1 right-1 h-2 w-2 bg-red-500 rounded-full"></span>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-80">
+                  <div className="p-2">
+                    <h3 className="font-semibold mb-2">Notifications</h3>
+                    <DropdownMenuItem>
+                      <div className="flex flex-col">
+                        <p className="font-medium">New incident reported</p>
+                        <p className="text-sm text-muted-foreground">Incident #2847 requires your attention</p>
+                        <p className="text-xs text-muted-foreground mt-1">2 hours ago</p>
+                      </div>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <div className="flex flex-col">
+                        <p className="font-medium">Audit scheduled</p>
+                        <p className="text-sm text-muted-foreground">Safety audit planned for next Monday</p>
+                        <p className="text-xs text-muted-foreground mt-1">5 hours ago</p>
+                      </div>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <div className="flex flex-col">
+                        <p className="font-medium">CAPA action overdue</p>
+                        <p className="text-sm text-muted-foreground">Action item #1523 is past due date</p>
+                        <p className="text-xs text-muted-foreground mt-1">1 day ago</p>
+                      </div>
+                    </DropdownMenuItem>
+                  </div>
+                </DropdownMenuContent>
+              </DropdownMenu>
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -252,11 +299,11 @@ const Dashboard = () => {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
-        <div className="mb-8">
-          <h1 className="text-4xl font-bold text-[hsl(var(--pine-dark))] mb-2">
-            EHS Module Dashboard
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl font-bold text-[hsl(var(--pine-dark))] mb-3">
+            EHS System Modules
           </h1>
-          <p className="text-[hsl(var(--muted-foreground))] text-lg">
+          <p className="text-[hsl(var(--muted-foreground))] text-lg max-w-3xl mx-auto">
             Access your subscribed modules to manage environmental, health, and safety operations
           </p>
         </div>

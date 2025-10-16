@@ -113,9 +113,9 @@ const Login = () => {
 
             <Button
               type="submit"
-              className="w-full gradient-green text-white font-semibold h-12 hover:gradient-green-hover transition-all"
+              className="w-full gradient-green text-white font-semibold h-12 rounded-lg hover:gradient-green-hover transition-all hover-lift hover:glow-effect"
             >
-              Sign In
+              Sign In →
             </Button>
           </form>
 
