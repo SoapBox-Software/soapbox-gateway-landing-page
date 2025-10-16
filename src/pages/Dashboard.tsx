@@ -1,0 +1,297 @@
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import ModuleCard from "@/components/ModuleCard";
+import {
+  AlertTriangle,
+  ClipboardCheck,
+  FileCheck,
+  Calendar,
+  Shield,
+  CheckSquare,
+  FileText,
+  ListChecks,
+  FileWarning,
+  GraduationCap,
+  FolderOpen,
+  RefreshCw,
+  Leaf,
+  Settings,
+  UserCog,
+  AlertCircle,
+  Target,
+  Briefcase,
+  Search,
+  ClipboardList,
+  Bell,
+  User,
+  LogOut,
+  RefreshCcw,
+} from "lucide-react";
+import logo from "@/assets/logo.png";
+
+const Dashboard = () => {
+  const navigate = useNavigate();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const authStatus = localStorage.getItem("isAuthenticated");
+    if (authStatus !== "true") {
+      navigate("/");
+    } else {
+      setIsAuthenticated(true);
+    }
+  }, [navigate]);
+
+  const handleLogout = () => {
+    localStorage.removeItem("isAuthenticated");
+    localStorage.removeItem("rememberMe");
+    navigate("/");
+  };
+
+  const modules = [
+    {
+      title: "Incident Management",
+      description: "Reports, tracks, investigates, and closes incidents with SLAs and analytics.",
+      url: "https://preview--ops-resolve-dash.lovable.app/dashboard",
+      icon: AlertTriangle,
+    },
+    {
+      title: "Audit Management",
+      description: "Streamlines audit planning, execution, and closure.",
+      url: "https://preview--soapbox-audit-craft.lovable.app/dashboard",
+      icon: ClipboardCheck,
+    },
+    {
+      title: "CAPA",
+      description: "Manages corrective/preventive actions with workflows and monitoring.",
+      url: "https://preview--soapbox-capa-flow.lovable.app/",
+      icon: FileCheck,
+    },
+    {
+      title: "Event Tracking",
+      description: "Tracks planned/unplanned events; escalation and analytics.",
+      icon: Calendar,
+      comingSoon: true,
+    },
+    {
+      title: "Risk Management",
+      description: "Identifies, assesses, and mitigates organizational risks.",
+      url: "https://preview--random-page.lovable.app/",
+      icon: Shield,
+    },
+    {
+      title: "Compliance Management",
+      description: "Monitors compliance with internal and external regulations.",
+      url: "https://preview--compliance-orb.lovable.app/",
+      icon: CheckSquare,
+    },
+    {
+      title: "Non-Compliance Reporting (NCR)",
+      description: "Track and manage non-compliance events with corrective actions.",
+      icon: FileWarning,
+      comingSoon: true,
+    },
+    {
+      title: "Checklist Management",
+      description: "Create, manage, and track completion of safety checklists.",
+      icon: ListChecks,
+      comingSoon: true,
+    },
+    {
+      title: "Permit to Work (PTW)",
+      description: "Digital permit system for high-risk work authorization.",
+      icon: FileText,
+      comingSoon: true,
+    },
+    {
+      title: "Training Management",
+      description: "Schedule, track, and certify employee training programs.",
+      icon: GraduationCap,
+      comingSoon: true,
+    },
+    {
+      title: "Document Management",
+      description: "Centralized repository for EHS documents and version control.",
+      icon: FolderOpen,
+      comingSoon: true,
+    },
+    {
+      title: "Change Management",
+      description: "Manage organizational changes with impact assessments.",
+      icon: RefreshCw,
+      comingSoon: true,
+    },
+    {
+      title: "EHS Management",
+      description: "Comprehensive environmental, health, and safety management.",
+      icon: Leaf,
+      comingSoon: true,
+    },
+    {
+      title: "Tenant Administration",
+      description: "Multi-tenant configuration and access management.",
+      icon: Settings,
+      comingSoon: true,
+    },
+    {
+      title: "Owner Administration",
+      description: "System-wide settings and global configuration.",
+      icon: UserCog,
+      comingSoon: true,
+    },
+    {
+      title: "Advanced Incident Management",
+      description: "Enhanced incident tracking with AI-powered insights.",
+      icon: AlertCircle,
+      comingSoon: true,
+    },
+    {
+      title: "Advanced Risk Management",
+      description: "Predictive risk analytics and scenario modeling.",
+      icon: Target,
+      comingSoon: true,
+    },
+    {
+      title: "Operational Risk Management",
+      description: "Real-time operational risk monitoring and mitigation.",
+      icon: Briefcase,
+      comingSoon: true,
+    },
+    {
+      title: "Inspection",
+      description: "Digital inspection forms and automated workflows.",
+      icon: Search,
+      comingSoon: true,
+    },
+    {
+      title: "Job Safety Analysis (JSA)",
+      description: "Systematic evaluation of job tasks and safety procedures.",
+      icon: ClipboardList,
+      comingSoon: true,
+    },
+    {
+      title: "Advanced Compliance Management",
+      description: "AI-driven compliance monitoring and regulatory updates.",
+      icon: CheckSquare,
+      comingSoon: true,
+    },
+  ];
+
+  if (!isAuthenticated) {
+    return null;
+  }
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="sticky top-0 z-50 bg-[hsl(var(--pine-dark))] shadow-lg">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            {/* Logo */}
+            <div className="flex items-center space-x-3">
+              <img src={logo} alt="SOAPBOX.CLOUD" className="h-10" />
+              <div className="hidden md:block">
+                <p className="text-[hsl(var(--pine-light))] text-xs">
+                  Protecting People. Preserving Planet. Powering Performance.
+                </p>
+              </div>
+            </div>
+
+            {/* Right Side Actions */}
+            <div className="flex items-center space-x-4">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-white hover:bg-[hsl(var(--sidebar-accent))]"
+              >
+                <RefreshCcw className="h-4 w-4 mr-2" />
+                <span className="hidden sm:inline">Switch User</span>
+              </Button>
+
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-white hover:bg-[hsl(var(--sidebar-accent))] relative"
+              >
+                <Bell className="h-5 w-5" />
+                <span className="absolute top-1 right-1 h-2 w-2 bg-red-500 rounded-full"></span>
+              </Button>
+
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="text-white hover:bg-[hsl(var(--sidebar-accent))]"
+                  >
+                    <User className="h-5 w-5" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-48">
+                  <DropdownMenuItem>
+                    <User className="mr-2 h-4 w-4" />
+                    Profile
+                  </DropdownMenuItem>
+                  <DropdownMenuItem onClick={handleLogout}>
+                    <LogOut className="mr-2 h-4 w-4" />
+                    Logout
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-12">
+        <div className="mb-8">
+          <h1 className="text-4xl font-bold text-[hsl(var(--pine-dark))] mb-2">
+            EHS Module Dashboard
+          </h1>
+          <p className="text-[hsl(var(--muted-foreground))] text-lg">
+            Access your subscribed modules to manage environmental, health, and safety operations
+          </p>
+        </div>
+
+        {/* Module Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {modules.map((module, index) => (
+            <ModuleCard key={index} {...module} />
+          ))}
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="bg-[hsl(var(--pine-dark))] text-[hsl(var(--pine-light))] py-6 mt-16">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex space-x-6 mb-4 md:mb-0">
+              <a href="#" className="hover:text-white transition-colors text-sm">
+                Terms
+              </a>
+              <span>|</span>
+              <a href="#" className="hover:text-white transition-colors text-sm">
+                Privacy
+              </a>
+              <span>|</span>
+              <a href="#" className="hover:text-white transition-colors text-sm">
+                Support
+              </a>
+            </div>
+            <p className="text-sm">© Soapbox.cloud 2025</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Dashboard;
