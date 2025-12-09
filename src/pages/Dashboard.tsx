@@ -33,6 +33,7 @@ import {
   User,
   LogOut,
   Users,
+  TriangleAlert,
 } from "lucide-react";
 import logo from "@/assets/logo.png";
 
@@ -95,14 +96,20 @@ const Dashboard = () => {
     {
       title: "Non-Compliance Reporting (NCR)",
       description: "Track and manage non-compliance events with corrective actions.",
+      url: "https://id-preview--6223ccbc-ecf4-42dd-8762-474380de042e.lovable.app/",
       icon: FileWarning,
-      comingSoon: true,
     },
     {
       title: "Checklist Management",
       description: "Create, manage, and track completion of safety checklists.",
+      url: "https://id-preview--e447bfce-0b7f-4ec6-b539-02a40d86875c.lovable.app/",
       icon: ListChecks,
-      comingSoon: true,
+    },
+    {
+      title: "Near Miss & Reporting",
+      description: "Capture and analyze near-miss incidents to prevent future accidents.",
+      url: "https://id-preview--290a6b11-cd72-4c91-982a-d65938091ff8.lovable.app/",
+      icon: TriangleAlert,
     },
     {
       title: "Permit to Work (PTW)",
@@ -167,14 +174,14 @@ const Dashboard = () => {
     {
       title: "Inspection",
       description: "Digital inspection forms and automated workflows.",
+      url: "https://preview--soapbox-inspect-iq.lovable.app/help",
       icon: Search,
-      comingSoon: true,
     },
     {
       title: "Job Safety Analysis (JSA)",
       description: "Systematic evaluation of job tasks and safety procedures.",
+      url: "https://lovable.dev/projects/2c806b9c-2226-4ae7-b27f-1bd7b4067456",
       icon: ClipboardList,
-      comingSoon: true,
     },
     {
       title: "Advanced Compliance Management",
