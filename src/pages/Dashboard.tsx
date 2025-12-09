@@ -180,7 +180,7 @@ const Dashboard = () => {
     {
       title: "Job Safety Analysis (JSA)",
       description: "Systematic evaluation of job tasks and safety procedures.",
-      url: "https://lovable.dev/projects/2c806b9c-2226-4ae7-b27f-1bd7b4067456",
+      url: "https://id-preview--2c806b9c-2226-4ae7-b27f-1bd7b4067456.lovable.app/",
       icon: ClipboardList,
     },
     {
