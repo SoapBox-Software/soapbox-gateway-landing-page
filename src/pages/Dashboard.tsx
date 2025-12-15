@@ -21,9 +21,6 @@ import {
   GraduationCap,
   FolderOpen,
   RefreshCw,
-  Leaf,
-  Settings,
-  UserCog,
   AlertCircle,
   Target,
   Briefcase,
@@ -34,6 +31,10 @@ import {
   LogOut,
   Users,
   TriangleAlert,
+  Eye,
+  Flame,
+  Skull,
+  Trash2,
 } from "lucide-react";
 import logo from "@/assets/logo.png";
 
@@ -112,6 +113,48 @@ const Dashboard = () => {
       icon: TriangleAlert,
     },
     {
+      title: "Operational Risk Management",
+      description: "Real-time operational risk monitoring and mitigation.",
+      url: "https://id-preview--ca0a2037-70be-45ec-a950-794182b91fd6.lovable.app/",
+      icon: Briefcase,
+    },
+    {
+      title: "Inspection",
+      description: "Digital inspection forms and automated workflows.",
+      url: "https://preview--soapbox-inspect-iq.lovable.app/help",
+      icon: Search,
+    },
+    {
+      title: "Job Safety Analysis (JSA)",
+      description: "Systematic evaluation of job tasks and safety procedures.",
+      url: "https://id-preview--2c806b9c-2226-4ae7-b27f-1bd7b4067456.lovable.app/",
+      icon: ClipboardList,
+    },
+    {
+      title: "Safety Observation Reporting",
+      description: "Report and track safety observations to enhance workplace conditions.",
+      icon: Eye,
+      comingSoon: true,
+    },
+    {
+      title: "Hot Work Permits",
+      description: "Manage permits for welding, cutting, and other hot work activities.",
+      icon: Flame,
+      comingSoon: true,
+    },
+    {
+      title: "Hazardous Material Management",
+      description: "Track and control hazardous substances across your facilities.",
+      icon: Skull,
+      comingSoon: true,
+    },
+    {
+      title: "Waste Management",
+      description: "Monitor and manage waste disposal and recycling processes.",
+      icon: Trash2,
+      comingSoon: true,
+    },
+    {
       title: "Permit to Work (PTW)",
       description: "Digital permit system for high-risk work authorization.",
       icon: FileText,
@@ -136,24 +179,6 @@ const Dashboard = () => {
       comingSoon: true,
     },
     {
-      title: "EHS Management",
-      description: "Comprehensive environmental, health, and safety management.",
-      icon: Leaf,
-      comingSoon: true,
-    },
-    {
-      title: "Tenant Administration",
-      description: "Multi-tenant configuration and access management.",
-      icon: Settings,
-      comingSoon: true,
-    },
-    {
-      title: "Owner Administration",
-      description: "System-wide settings and global configuration.",
-      icon: UserCog,
-      comingSoon: true,
-    },
-    {
       title: "Advanced Incident Management",
       description: "Enhanced incident tracking with AI-powered insights.",
       icon: AlertCircle,
@@ -164,24 +189,6 @@ const Dashboard = () => {
       description: "Predictive risk analytics and scenario modeling.",
       icon: Target,
       comingSoon: true,
-    },
-    {
-      title: "Operational Risk Management",
-      description: "Real-time operational risk monitoring and mitigation.",
-      icon: Briefcase,
-      comingSoon: true,
-    },
-    {
-      title: "Inspection",
-      description: "Digital inspection forms and automated workflows.",
-      url: "https://preview--soapbox-inspect-iq.lovable.app/help",
-      icon: Search,
-    },
-    {
-      title: "Job Safety Analysis (JSA)",
-      description: "Systematic evaluation of job tasks and safety procedures.",
-      url: "https://id-preview--2c806b9c-2226-4ae7-b27f-1bd7b4067456.lovable.app/",
-      icon: ClipboardList,
     },
     {
       title: "Advanced Compliance Management",
@@ -316,7 +323,7 @@ const Dashboard = () => {
         </div>
 
         {/* Module Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {modules.map((module, index) => (
             <ModuleCard key={index} {...module} />
           ))}
