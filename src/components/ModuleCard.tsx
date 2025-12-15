@@ -18,7 +18,7 @@ const ModuleCard = ({ title, description, url, icon: Icon, comingSoon }: ModuleC
   };
 
   return (
-    <div className="bg-white rounded-2xl border border-[hsl(var(--border))] p-6 hover-lift hover:shadow-lg hover:glow-effect transition-all">
+    <div className="bg-white rounded-2xl border border-[hsl(var(--border))] p-6 hover-lift hover:shadow-lg hover:glow-effect transition-all flex flex-col h-full">
       <div className="flex items-start justify-between mb-4">
         <div className="p-3 rounded-xl gradient-green">
           <Icon className="h-6 w-6 text-white" />
@@ -33,7 +33,7 @@ const ModuleCard = ({ title, description, url, icon: Icon, comingSoon }: ModuleC
       <h3 className="text-xl font-bold text-[hsl(var(--pine-dark))] mb-2">
         {title}
       </h3>
-      <p className="text-[hsl(var(--muted-foreground))] text-sm mb-6 min-h-[3rem]">
+      <p className="text-[hsl(var(--muted-foreground))] text-sm mb-6 flex-grow">
         {description}
       </p>
 
