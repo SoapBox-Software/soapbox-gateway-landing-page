@@ -33,14 +33,14 @@ const ModuleCard = ({ title, description, url, icon: Icon, comingSoon }: ModuleC
       <h3 className="text-xl font-bold text-[hsl(var(--pine-dark))] mb-2">
         {title}
       </h3>
-      <p className="text-[hsl(var(--muted-foreground))] text-sm mb-6 flex-grow">
+      <p className="text-[hsl(var(--muted-foreground))] text-sm flex-1">
         {description}
       </p>
 
       <Button
         onClick={handleAccess}
         disabled={comingSoon}
-        className={`w-full font-semibold rounded-lg ${
+        className={`w-full font-semibold rounded-lg mt-auto ${
           comingSoon
             ? "bg-muted text-muted-foreground cursor-not-allowed"
             : "gradient-green text-white hover:gradient-green-hover"
