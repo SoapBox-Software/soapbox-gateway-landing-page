@@ -79,8 +79,8 @@ const Dashboard = () => {
     {
       title: "Event Tracking",
       description: "Tracks planned/unplanned events; escalation and analytics.",
+      url: "https://id-preview--66a6c22a-9185-4f11-bc75-6f851488f8e7.lovable.app/",
       icon: Calendar,
-      comingSoon: true,
     },
     {
       title: "Risk Management",
@@ -133,14 +133,14 @@ const Dashboard = () => {
     {
       title: "Safety Observation Reporting",
       description: "Report and track safety observations to enhance workplace conditions.",
+      url: "https://id-preview--028c806b-042b-48fa-a108-cb742fe05d07.lovable.app/",
       icon: Eye,
-      comingSoon: true,
     },
     {
       title: "Hot Work Permits",
       description: "Manage permits for welding, cutting, and other hot work activities.",
+      url: "https://id-preview--b569da81-3986-4487-aa6c-d204c7ec2c65.lovable.app/",
       icon: Flame,
-      comingSoon: true,
     },
     {
       title: "Hazardous Material Management",
