@@ -1,63 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 150 10% 98%;
-    --foreground: 150 20% 16%;
-
+    --background: 210 20% 97%;
+    --foreground: 160 30% 15%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 150 20% 16%;
-
+    --card-foreground: 160 30% 15%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 150 20% 16%;
-
-    --primary: 150 20% 16%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 150 15% 90%;
-    --secondary-foreground: 150 20% 16%;
-
-    --muted: 150 10% 95%;
-    --muted-foreground: 150 10% 45%;
-
-    --accent: 155 66% 42%;
-    --accent-foreground: 0 0% 98%;
-
+    --popover-foreground: 160 30% 15%;
+    
+    --primary: 158 64% 35%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 160 20% 96%;
+    --secondary-foreground: 160 30% 20%;
+    
+    --muted: 160 10% 94%;
+    --muted-foreground: 160 10% 45%;
+    
+    --accent: 158 64% 92%;
+    --accent-foreground: 158 64% 25%;
+    
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 150 15% 88%;
-    --input: 150 15% 92%;
-    --ring: 155 66% 42%;
-
-    --radius: 1rem;
-
-    /* Pine green theme colors */
-    --pine-dark: 150 20% 16%;
-    --pine-medium: 150 15% 35%;
-    --pine-light: 150 10% 85%;
+    --destructive-foreground: 0 0% 100%;
     
-    /* Gradient colors */
-    --green-start: 155 66% 42%;
-    --green-end: 120 45% 56%;
+    --border: 160 15% 88%;
+    --input: 160 15% 90%;
+    --ring: 158 64% 35%;
     
-    /* Hover effects */
-    --hover-glow: 155 66% 42%;
+    --radius: 0.75rem;
     
-    --sidebar-background: 150 20% 16%;
+    /* Enterprise Emerald Theme */
+    --emerald: 158 64% 40%;
+    --emerald-dark: 158 70% 25%;
+    --emerald-light: 158 60% 85%;
+    
+    --pine: 160 50% 20%;
+    --pine-dark: 160 60% 12%;
+    --pine-medium: 160 40% 30%;
+    --pine-light: 160 30% 85%;
+    
+    /* System Colors */
+    --ehs-color: 158 64% 40%;
+    --eqms-color: 270 60% 50%;
+    --esg-color: 210 80% 50%;
+    --grc-color: 30 80% 50%;
+    --bcm-color: 0 70% 50%;
+    --ohsm-color: 45 90% 50%;
+    --ems-env-color: 140 60% 40%;
+    --ems-energy-color: 200 70% 50%;
+    --ai-color: 280 70% 55%;
+    --platform-color: 220 15% 45%;
+    
+    /* Glassmorphism */
+    --glass: 0 0% 100% / 0.7;
+    --glass-border: 0 0% 100% / 0.3;
+    
+    --sidebar-background: 160 60% 12%;
     --sidebar-foreground: 0 0% 96%;
-    --sidebar-primary: 155 66% 42%;
+    --sidebar-primary: 158 64% 40%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 150 15% 25%;
+    --sidebar-accent: 160 40% 20%;
     --sidebar-accent-foreground: 0 0% 96%;
-    --sidebar-border: 150 15% 20%;
-    --sidebar-ring: 155 66% 42%;
+    --sidebar-border: 160 30% 20%;
+    --sidebar-ring: 158 64% 40%;
   }
 }
 
@@ -65,36 +77,144 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
+  
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
   }
-
+  
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  /* Glassmorphic Card */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/40 shadow-sm rounded-xl;
+  }
+  
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300 cursor-pointer;
+  }
+  
+  .glass-card-hover:hover {
+    @apply shadow-lg border-white/60;
+    transform: translateY(-2px);
+  }
+  
+  .glass-card-disabled {
+    @apply bg-white/40 backdrop-blur-sm border border-white/20 opacity-50;
+  }
+  
+  /* Glassmorphic Tab */
+  .glass-tab {
+    @apply px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300;
+    @apply bg-white/60 backdrop-blur-sm border border-white/30;
+    @apply text-muted-foreground hover:text-foreground hover:bg-white/80;
+  }
+  
+  .glass-tab-active {
+    @apply bg-primary text-primary-foreground border-primary shadow-lg;
+    box-shadow: 0 4px 20px hsl(var(--emerald) / 0.35);
+  }
+  
+  /* Hero Glassmorphic Container */
+  .glass-hero {
+    @apply rounded-2xl backdrop-blur-xl border border-white/40;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(200, 235, 220, 0.6) 100%
+    );
+  }
+  
+  /* Header */
+  .header-gradient {
+    background: linear-gradient(
+      135deg,
+      hsl(160 60% 11%) 0%,
+      hsl(158 50% 16%) 50%,
+      hsl(160 55% 13%) 100%
+    );
+  }
+  
+  /* Section Headings */
+  .section-heading {
+    @apply text-base font-semibold text-foreground mb-4;
+    @apply flex items-center gap-2.5;
+  }
+  
+  .section-heading::before {
+    content: '';
+    @apply w-1 h-5 rounded-full bg-primary;
+  }
+  
+  /* Module Badge on Hover */
+  .module-badge {
+    @apply absolute -top-2 -right-2 px-2.5 py-1 text-xs font-medium rounded-full z-10;
+    @apply bg-primary/90 text-primary-foreground shadow-md backdrop-blur-sm;
+    @apply opacity-0 transform scale-90 transition-all duration-300 pointer-events-none;
+  }
+  
+  .module-card:hover .module-badge {
+    @apply opacity-100 scale-100;
+  }
+  
+  /* Tab Description */
+  .tab-description {
+    @apply text-center py-3 px-6 text-muted-foreground text-sm;
+    @apply transition-all duration-300;
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/20 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/30;
+  }
+  
+  /* Hover utilities */
+  .hover-lift {
+    @apply transition-all duration-300;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-3px);
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 25px hsl(var(--emerald) / 0.2);
   }
 }
 
 @layer utilities {
-  .gradient-green {
-    background: linear-gradient(135deg, hsl(var(--green-start)), hsl(var(--green-end)));
+  .text-balance {
+    text-wrap: balance;
   }
   
-  .gradient-green-hover {
-    background: linear-gradient(135deg, hsl(var(--green-start)), hsl(var(--green-end)));
-    filter: brightness(1.1);
+  .animation-delay-200 {
+    animation-delay: 200ms;
   }
   
-  .hover-lift {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  .animation-delay-400 {
+    animation-delay: 400ms;
   }
   
-  .hover-lift:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px hsla(var(--green-start) / 0.2);
-  }
-  
-  .glow-effect {
-    box-shadow: 0 0 20px hsla(var(--hover-glow) / 0.3);
+  .animation-delay-600 {
+    animation-delay: 600ms;
   }
 }
