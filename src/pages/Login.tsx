@@ -30,37 +30,52 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Background with gradient and overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(var(--pine-light))]/15 via-[hsl(160,30%,96%)] to-[hsl(var(--pine-light))]/10" />
-      <div className="absolute inset-0 bg-[hsl(var(--pine-dark))]/[0.06]" />
+      {/* Background with soft teal/emerald glassmorphic gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(180,30%,92%)] via-[hsl(170,25%,94%)] to-[hsl(180,20%,96%)]" />
       
-      {/* Abstract decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-64 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 left-1/4 w-32 h-32 rounded-full bg-[hsl(var(--accent))]/10 blur-2xl" />
-        <div className="absolute top-20 right-1/3 w-48 h-48 rounded-full bg-[hsl(var(--pine-light))]/20 blur-3xl" />
-        <div className="absolute -top-10 right-1/4 w-40 h-40 rounded-full bg-[hsl(160,40%,85%)]/30 blur-2xl" />
+      {/* Glassmorphic overlay effects */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 right-0 h-72 bg-gradient-to-b from-[hsl(175,40%,85%)]/40 to-transparent" />
+        <div className="absolute top-10 left-1/4 w-64 h-64 rounded-full bg-[hsl(170,50%,80%)]/30 blur-3xl" />
+        <div className="absolute top-20 right-1/4 w-80 h-80 rounded-full bg-[hsl(180,40%,88%)]/40 blur-3xl" />
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[hsl(180,20%,96%)] to-transparent" />
+      </div>
+
+      {/* Decorative abstract UI elements at top */}
+      <div className="absolute top-8 left-1/2 -translate-x-1/2 w-full max-w-2xl h-40 pointer-events-none opacity-60">
+        <div className="absolute top-4 left-1/4 w-16 h-16 rounded-2xl bg-white/50 backdrop-blur-sm border border-white/60 shadow-lg flex items-center justify-center">
+          <div className="w-8 h-8 rounded-lg bg-[hsl(var(--accent))]/20" />
+        </div>
+        <div className="absolute top-8 right-1/4 w-32 h-20 rounded-xl bg-white/60 backdrop-blur-sm border border-white/70 shadow-lg p-2">
+          <div className="w-full h-2 rounded bg-[hsl(var(--accent))]/30 mb-1" />
+          <div className="w-3/4 h-2 rounded bg-gray-300/50" />
+        </div>
+        <div className="absolute top-2 right-1/3 w-12 h-12 rounded-xl bg-[hsl(var(--accent))]/80 shadow-lg flex items-center justify-center">
+          <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
       </div>
       
-      <div className="relative z-10 w-full max-w-md px-4 animate-fade-in">
-        {/* Logo */}
-        <div className="flex items-center justify-center gap-3 mb-8">
+      <div className="relative z-10 w-full max-w-md px-4 animate-fade-in mt-16">
+        {/* Logo only */}
+        <div className="flex items-center justify-center mb-6">
           <img 
             src={logo} 
             alt="SOAPBOX.CLOUD" 
-            className="h-10"
+            className="h-12"
           />
-          <span className="text-xl font-bold tracking-wide text-[#1F2A2E]">SOAPBOX.CLOUD</span>
         </div>
 
         {/* Header Text */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-[#1F2A2E] mb-3">
+        <div className="text-center mb-6">
+          <h1 className="text-3xl font-bold text-[#1F2A2E] mb-4">
             Sign In
           </h1>
-          <p className="text-[#1F2A2E] font-medium text-base mb-2">
+          <p className="text-[#1F2A2E] font-medium text-lg mb-3">
             Engineering the Operating System for Regulated Work.
           </p>
-          <p className="text-[#4A5568] text-sm leading-relaxed max-w-sm mx-auto">
+          <p className="text-[#5A6A72] text-sm leading-relaxed max-w-sm mx-auto">
             A unified, cloud-native foundation for safety, risk, and compliance — built with clarity, resilience, and governance at its core.
           </p>
         </div>
