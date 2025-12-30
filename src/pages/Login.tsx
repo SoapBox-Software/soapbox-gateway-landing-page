@@ -30,105 +30,111 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Background with soft teal/emerald glassmorphic gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(180,30%,92%)] via-[hsl(170,25%,94%)] to-[hsl(180,20%,96%)]" />
+      {/* Soft radial gradient background */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#F4FBF8_0%,_#E1F1EA_100%)]" />
       
-      {/* Glassmorphic overlay effects */}
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 right-0 h-72 bg-gradient-to-b from-[hsl(175,40%,85%)]/40 to-transparent" />
-        <div className="absolute top-10 left-1/4 w-64 h-64 rounded-full bg-[hsl(170,50%,80%)]/30 blur-3xl" />
-        <div className="absolute top-20 right-1/4 w-80 h-80 rounded-full bg-[hsl(180,40%,88%)]/40 blur-3xl" />
-        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[hsl(180,20%,96%)] to-transparent" />
+      {/* Subtle floating abstract shapes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-[15%] w-32 h-32 rounded-full bg-[#2EA47D]/8 blur-3xl" />
+        <div className="absolute top-40 right-[20%] w-48 h-48 rounded-full bg-[#1F8F6B]/6 blur-3xl" />
+        <div className="absolute bottom-32 left-[25%] w-40 h-40 rounded-full bg-[#2EA47D]/5 blur-3xl" />
+        <div className="absolute top-16 right-[35%] w-24 h-24 rounded-full bg-[#E1F1EA]/80 blur-2xl" />
+        <div className="absolute bottom-20 right-[15%] w-36 h-36 rounded-full bg-[#2EA47D]/4 blur-3xl" />
       </div>
 
-      {/* Decorative abstract UI elements at top */}
-      <div className="absolute top-8 left-1/2 -translate-x-1/2 w-full max-w-2xl h-40 pointer-events-none opacity-60">
-        <div className="absolute top-4 left-1/4 w-16 h-16 rounded-2xl bg-white/50 backdrop-blur-sm border border-white/60 shadow-lg flex items-center justify-center">
-          <div className="w-8 h-8 rounded-lg bg-[hsl(var(--accent))]/20" />
+      {/* Decorative floating UI elements at top */}
+      <div className="absolute top-6 left-1/2 -translate-x-1/2 w-full max-w-3xl h-48 pointer-events-none">
+        <div className="absolute top-8 left-[18%] w-14 h-14 rounded-2xl bg-white/70 backdrop-blur-sm border border-white/80 shadow-lg flex items-center justify-center">
+          <div className="w-7 h-7 rounded-lg bg-[#2EA47D]/25" />
         </div>
-        <div className="absolute top-8 right-1/4 w-32 h-20 rounded-xl bg-white/60 backdrop-blur-sm border border-white/70 shadow-lg p-2">
-          <div className="w-full h-2 rounded bg-[hsl(var(--accent))]/30 mb-1" />
-          <div className="w-3/4 h-2 rounded bg-gray-300/50" />
+        <div className="absolute top-4 left-[35%] w-10 h-10 rounded-xl bg-white/50 backdrop-blur-sm border border-white/60 shadow-md" />
+        <div className="absolute top-12 right-[18%] w-36 h-24 rounded-xl bg-white/75 backdrop-blur-sm border border-white/80 shadow-lg p-3">
+          <div className="w-full h-2.5 rounded bg-[#2EA47D]/35 mb-2" />
+          <div className="w-4/5 h-2 rounded bg-[#D6E5DE]" />
+          <div className="w-3/5 h-2 rounded bg-[#D6E5DE] mt-1.5" />
         </div>
-        <div className="absolute top-2 right-1/3 w-12 h-12 rounded-xl bg-[hsl(var(--accent))]/80 shadow-lg flex items-center justify-center">
-          <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+        <div className="absolute top-6 right-[38%] w-11 h-11 rounded-xl bg-[#2EA47D] shadow-lg flex items-center justify-center">
+          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
           </svg>
         </div>
+        <div className="absolute top-20 left-[28%] w-8 h-8 rounded-lg bg-[#F0E6F6]/80 backdrop-blur-sm border border-white/60 shadow-md" />
       </div>
       
-      <div className="relative z-10 w-full max-w-md px-4 animate-fade-in mt-16">
-        {/* Logo only */}
-        <div className="flex items-center justify-center mb-6">
-          <img 
-            src={logo} 
-            alt="SOAPBOX.CLOUD" 
-            className="h-12"
-          />
+      <div className="relative z-10 w-full max-w-md px-4 animate-fade-in mt-20">
+        {/* Logo with glass chip container */}
+        <div className="flex items-center justify-center mb-8">
+          <div className="bg-white/60 backdrop-blur-sm rounded-2xl px-6 py-3 border border-white/70 shadow-sm">
+            <img 
+              src={logo} 
+              alt="SOAPBOX.CLOUD" 
+              className="h-14"
+            />
+          </div>
         </div>
 
         {/* Header Text */}
-        <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold text-[#1F2A2E] mb-4">
+        <div className="text-center mb-8">
+          <h1 className="text-[34px] font-bold text-[#0F2A1F] mb-3">
             Sign In
           </h1>
-          <p className="text-[#1F2A2E] font-medium text-lg mb-3">
+          <p className="text-[#2C3E35] font-medium text-lg mb-3">
             Engineering the Operating System for Regulated Work.
           </p>
-          <p className="text-[#5A6A72] text-sm leading-relaxed max-w-sm mx-auto">
+          <p className="text-[#4A5F57] text-sm leading-[1.6] max-w-[520px] mx-auto">
             A unified, cloud-native foundation for safety, risk, and compliance — built with clarity, resilience, and governance at its core.
           </p>
         </div>
 
         {/* Login Card */}
-        <div className="bg-white/90 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/60 transition-all duration-300">
-          <h2 className="text-lg font-semibold text-[#1F2A2E] mb-6 text-center">
+        <div className="bg-white/[0.95] backdrop-blur-md rounded-[18px] p-8 md:p-9 shadow-[0_30px_60px_rgba(0,0,0,0.08)] border border-white/60 transition-all duration-300">
+          <h2 className="text-lg font-semibold text-[#0F2A1F] mb-6 text-center">
             Sign in to Soapbox.cloud
           </h2>
-
+          
           <form onSubmit={handleLogin} className="space-y-5">
             <div className="relative group">
-              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#4A5568] transition-colors group-focus-within:text-[hsl(var(--accent))]" />
+              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#4A5F57] transition-colors group-focus-within:text-[#2EA47D]" />
               <Input
                 type="email"
                 placeholder="Email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="pl-12 h-12 bg-white border-[#CBD5E0] text-[#1F2A2E] placeholder:text-[#718096] focus:border-[hsl(var(--accent))] focus:ring-2 focus:ring-[hsl(var(--accent))]/20 rounded-xl transition-all"
+                className="pl-12 h-[52px] bg-white border-[#D6E5DE] text-[#0F2A1F] placeholder:text-[#7A8F86] rounded-xl transition-all focus:border-[#2EA47D] focus:ring-[3px] focus:ring-[rgba(46,164,125,0.15)]"
                 required
               />
             </div>
 
             <div>
               <div className="relative group">
-                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#4A5568] transition-colors group-focus-within:text-[hsl(var(--accent))]" />
+                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#4A5F57] transition-colors group-focus-within:text-[#2EA47D]" />
                 <Input
                   type="password"
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="pl-12 pr-28 h-12 bg-white border-[#CBD5E0] text-[#1F2A2E] placeholder:text-[#718096] focus:border-[hsl(var(--accent))] focus:ring-2 focus:ring-[hsl(var(--accent))]/20 rounded-xl transition-all"
+                  className="pl-12 pr-32 h-[52px] bg-white border-[#D6E5DE] text-[#0F2A1F] placeholder:text-[#7A8F86] rounded-xl transition-all focus:border-[#2EA47D] focus:ring-[3px] focus:ring-[rgba(46,164,125,0.15)]"
                   required
                 />
                 <button
                   type="button"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-medium text-[hsl(var(--accent))] hover:text-[hsl(var(--pine-dark))] transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-medium text-[#2EA47D] hover:text-[#1F8F6B] transition-colors"
                 >
                   Forgot password?
                 </button>
               </div>
             </div>
 
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-3 pt-1">
               <Checkbox
                 id="remember"
                 checked={rememberMe}
                 onCheckedChange={(checked) => setRememberMe(checked as boolean)}
-                className="border-[#CBD5E0] data-[state=checked]:bg-[hsl(var(--accent))] data-[state=checked]:border-[hsl(var(--accent))]"
+                className="border-[#D6E5DE] data-[state=checked]:bg-[#2EA47D] data-[state=checked]:border-[#2EA47D]"
               />
               <label
                 htmlFor="remember"
-                className="text-sm text-[#4A5568] cursor-pointer select-none"
+                className="text-sm text-[#3E5B52] cursor-pointer select-none"
               >
                 Remember me
               </label>
@@ -136,83 +142,82 @@ const Login = () => {
 
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-[hsl(var(--accent))] to-[hsl(160,60%,35%)] text-white font-semibold h-12 rounded-xl shadow-lg shadow-[hsl(var(--accent))]/25 hover:shadow-xl hover:shadow-[hsl(var(--accent))]/30 hover:brightness-110 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full bg-gradient-to-br from-[#2EA47D] to-[#1F8F6B] text-white font-semibold h-[54px] rounded-[14px] shadow-[0_10px_24px_rgba(46,164,125,0.35)] hover:shadow-[0_14px_28px_rgba(46,164,125,0.4)] hover:-translate-y-0.5 hover:from-[#279971] hover:to-[#1A7D5E] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
             >
               Sign in
             </Button>
           </form>
 
           {/* SSO Options */}
-          <div className="mt-6">
+          <div className="mt-7">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-[#E2E8F0]"></div>
+                <div className="w-full border-t border-[#D6E5DE]"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-4 bg-white/90 text-[#718096]">
-                  Or sign in with
-                </span>
+                <span className="px-4 bg-white/95 text-[#5A7068]">Or sign in with</span>
               </div>
             </div>
-
+            
             <div className="mt-5 flex justify-center gap-4">
-              <Button
+              <button
                 type="button"
-                variant="outline"
                 onClick={() => handleSSOLogin("google")}
-                className="h-12 px-6 rounded-xl border-[#E2E8F0] bg-white hover:bg-[#F7FAFC] hover:border-[#CBD5E0] transition-all duration-200 shadow-sm hover:shadow-md"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6E5DE] rounded-xl hover:bg-[#F8FCFA] hover:border-[#B8D4C8] transition-all duration-200 shadow-sm hover:shadow-md"
               >
-                <svg className="h-5 w-5" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                   <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
                   <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
                   <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                 </svg>
-              </Button>
-              <Button
+              </button>
+              <button
                 type="button"
-                variant="outline"
                 onClick={() => handleSSOLogin("microsoft")}
-                className="h-12 px-6 rounded-xl border-[#E2E8F0] bg-white hover:bg-[#F7FAFC] hover:border-[#CBD5E0] transition-all duration-200 shadow-sm hover:shadow-md"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6E5DE] rounded-xl hover:bg-[#F8FCFA] hover:border-[#B8D4C8] transition-all duration-200 shadow-sm hover:shadow-md"
               >
-                <svg className="h-5 w-5" viewBox="0 0 24 24">
-                  <path fill="#F25022" d="M1 1h10v10H1z"/>
-                  <path fill="#00A4EF" d="M1 13h10v10H1z"/>
-                  <path fill="#7FBA00" d="M13 1h10v10H13z"/>
-                  <path fill="#FFB900" d="M13 13h10v10H13z"/>
+                <svg className="w-5 h-5" viewBox="0 0 24 24">
+                  <path fill="#00A4EF" d="M11.4 24H0V12.6h11.4V24z"/>
+                  <path fill="#FFB900" d="M24 24H12.6V12.6H24V24z"/>
+                  <path fill="#F25022" d="M11.4 11.4H0V0h11.4v11.4z"/>
+                  <path fill="#7FBA00" d="M24 11.4H12.6V0H24v11.4z"/>
                 </svg>
-              </Button>
-              <Button
+              </button>
+              <button
                 type="button"
-                variant="outline"
                 onClick={() => handleSSOLogin("apple")}
-                className="h-12 px-6 rounded-xl border-[#E2E8F0] bg-white hover:bg-[#F7FAFC] hover:border-[#CBD5E0] transition-all duration-200 shadow-sm hover:shadow-md"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6E5DE] rounded-xl hover:bg-[#F8FCFA] hover:border-[#B8D4C8] transition-all duration-200 shadow-sm hover:shadow-md"
               >
-                <svg className="h-5 w-5 text-[#1F2A2E]" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="#000000">
+                  <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
                 </svg>
-              </Button>
+              </button>
             </div>
           </div>
-
+          
           {/* Footer links inside card */}
-          <div className="mt-6 flex justify-center gap-2 text-sm">
-            <a href="#" className="text-[#4A5568] hover:text-[hsl(var(--accent))] hover:underline transition-colors">Privacy Policy</a>
-            <span className="text-[#CBD5E0]">•</span>
-            <a href="#" className="text-[#4A5568] hover:text-[hsl(var(--accent))] hover:underline transition-colors">Terms of Use</a>
+          <div className="mt-7 flex justify-center gap-3 text-sm">
+            <a href="#" className="text-[#4A5F57] hover:text-[#2EA47D] hover:underline transition-colors">
+              Privacy Policy
+            </a>
+            <span className="text-[#B8D4C8]">•</span>
+            <a href="#" className="text-[#4A5F57] hover:text-[#2EA47D] hover:underline transition-colors">
+              Terms of Use
+            </a>
           </div>
         </div>
-
+        
         {/* Create account link */}
-        <p className="text-center mt-6 text-sm">
-          <span className="text-[#4A5568]">New here?</span>{" "}
-          <button className="text-[hsl(var(--accent))] font-semibold hover:underline transition-colors">
+        <p className="text-center mt-7 text-sm">
+          <span className="text-[#4A5F57]">New here?</span>{" "}
+          <button className="text-[#2EA47D] font-semibold hover:underline transition-colors">
             Create an account
           </button>
         </p>
-
+        
         {/* Copyright */}
-        <p className="text-center mt-4 text-xs text-[#718096]">
+        <p className="text-center mt-4 text-xs text-[#5A7068]">
           © 2024 Soapbox.cloud. All rights reserved.
         </p>
       </div>
