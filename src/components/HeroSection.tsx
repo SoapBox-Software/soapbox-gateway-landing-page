@@ -21,13 +21,13 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Left: Text Content */}
             <div className="space-y-6">
-              <div className="space-y-3">
+            <div className="space-y-3">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                   Welcome to{" "}
-                  <span className="text-primary">Soapbox.cloud</span>
+                  <span className="text-primary">Soapbox</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  A comprehensive system for sustainability and regulated industries.
+                  Engineering the Operating System for Regulated Industries.
                 </p>
               </div>
               

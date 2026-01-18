@@ -6,59 +6,60 @@
 
 @layer base {
   :root {
-    --background: 210 20% 97%;
-    --foreground: 215 60% 25%;
+    --background: 0 0% 100%;
+    --foreground: 165 25% 15%;
     
     --card: 0 0% 100%;
-    --card-foreground: 215 60% 25%;
+    --card-foreground: 165 25% 15%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 215 60% 25%;
+    --popover-foreground: 165 25% 15%;
     
-    /* Primary: Blue from logo (#2d5ab0) */
-    --primary: 215 60% 43%;
+    /* Primary: Deep Blue from new logo (#2d5ab0) */
+    --primary: 215 59% 43%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 215 30% 96%;
-    --secondary-foreground: 215 60% 25%;
+    --secondary: 160 20% 96%;
+    --secondary-foreground: 165 25% 15%;
     
-    --muted: 215 15% 94%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 160 10% 94%;
+    --muted-foreground: 165 10% 45%;
     
-    /* Accent: Green from logo (#4db051) */
-    --accent: 122 40% 50%;
+    /* Accent: Emerald Green from logo (#4db051) */
+    --accent: 122 45% 50%;
     --accent-foreground: 0 0% 100%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 215 20% 88%;
-    --input: 215 20% 90%;
-    --ring: 215 60% 43%;
+    --border: 160 15% 88%;
+    --input: 160 15% 90%;
+    --ring: 215 59% 43%;
     
     --radius: 0.75rem;
     
-    /* Enterprise Blue/Green Theme */
-    --brand-blue: 215 60% 43%;
+    /* Soapbox Theme: Blue + Green */
+    --brand-blue: 215 59% 43%;
     --brand-blue-dark: 215 65% 30%;
     --brand-blue-light: 215 50% 85%;
     
-    --brand-green: 122 40% 50%;
-    --brand-green-dark: 122 45% 35%;
-    --brand-green-light: 122 35% 85%;
+    --brand-green: 122 45% 50%;
+    --brand-green-dark: 122 50% 35%;
+    --brand-green-light: 122 35% 90%;
     
-    /* Legacy emerald tokens (mapped to new theme) */
-    --emerald: 122 40% 50%;
-    --emerald-dark: 122 45% 35%;
-    --emerald-light: 122 35% 85%;
+    /* Legacy emerald tokens */
+    --emerald: 122 45% 50%;
+    --emerald-dark: 122 50% 35%;
+    --emerald-light: 122 35% 90%;
     
-    --pine: 215 50% 25%;
-    --pine-dark: 215 60% 18%;
-    --pine-medium: 215 45% 35%;
-    --pine-light: 215 30% 90%;
+    /* Dark charcoal/green tones from soapbox.in */
+    --pine: 165 25% 15%;
+    --pine-dark: 165 30% 10%;
+    --pine-medium: 165 20% 25%;
+    --pine-light: 160 15% 92%;
     
     /* System Colors */
-    --ehs-color: 122 40% 50%;
+    --ehs-color: 122 45% 50%;
     --eqms-color: 270 60% 50%;
     --esg-color: 210 80% 50%;
     --grc-color: 30 80% 50%;
@@ -73,14 +74,15 @@
     --glass: 0 0% 100% / 0.7;
     --glass-border: 0 0% 100% / 0.3;
     
-    --sidebar-background: 215 60% 18%;
+    /* Sidebar: Dark charcoal-green like soapbox.in */
+    --sidebar-background: 165 30% 12%;
     --sidebar-foreground: 0 0% 96%;
-    --sidebar-primary: 215 60% 43%;
+    --sidebar-primary: 122 45% 50%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 215 45% 25%;
+    --sidebar-accent: 165 25% 20%;
     --sidebar-accent-foreground: 0 0% 96%;
-    --sidebar-border: 215 40% 25%;
-    --sidebar-ring: 215 60% 43%;
+    --sidebar-border: 165 20% 18%;
+    --sidebar-ring: 122 45% 50%;
   }
 }
 
@@ -137,18 +139,18 @@
     background: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.95) 0%,
-      rgba(255, 255, 255, 0.8) 50%,
-      rgba(200, 235, 220, 0.6) 100%
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(220, 245, 235, 0.7) 100%
     );
   }
   
-  /* Header */
+  /* Header: Dark charcoal-green like soapbox.in */
   .header-gradient {
     background: linear-gradient(
       135deg,
-      hsl(215 60% 20%) 0%,
-      hsl(215 55% 28%) 50%,
-      hsl(215 60% 22%) 100%
+      hsl(165 30% 12%) 0%,
+      hsl(165 25% 16%) 50%,
+      hsl(165 30% 14%) 100%
     );
   }
   
