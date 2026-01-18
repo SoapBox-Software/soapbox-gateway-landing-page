@@ -7,47 +7,58 @@
 @layer base {
   :root {
     --background: 210 20% 97%;
-    --foreground: 160 30% 15%;
+    --foreground: 215 60% 25%;
     
     --card: 0 0% 100%;
-    --card-foreground: 160 30% 15%;
+    --card-foreground: 215 60% 25%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 160 30% 15%;
+    --popover-foreground: 215 60% 25%;
     
-    --primary: 158 64% 35%;
+    /* Primary: Blue from logo (#2d5ab0) */
+    --primary: 215 60% 43%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 160 20% 96%;
-    --secondary-foreground: 160 30% 20%;
+    --secondary: 215 30% 96%;
+    --secondary-foreground: 215 60% 25%;
     
-    --muted: 160 10% 94%;
-    --muted-foreground: 160 10% 45%;
+    --muted: 215 15% 94%;
+    --muted-foreground: 215 15% 45%;
     
-    --accent: 158 64% 92%;
-    --accent-foreground: 158 64% 25%;
+    /* Accent: Green from logo (#4db051) */
+    --accent: 122 40% 50%;
+    --accent-foreground: 0 0% 100%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 160 15% 88%;
-    --input: 160 15% 90%;
-    --ring: 158 64% 35%;
+    --border: 215 20% 88%;
+    --input: 215 20% 90%;
+    --ring: 215 60% 43%;
     
     --radius: 0.75rem;
     
-    /* Enterprise Emerald Theme */
-    --emerald: 158 64% 40%;
-    --emerald-dark: 158 70% 25%;
-    --emerald-light: 158 60% 85%;
+    /* Enterprise Blue/Green Theme */
+    --brand-blue: 215 60% 43%;
+    --brand-blue-dark: 215 65% 30%;
+    --brand-blue-light: 215 50% 85%;
     
-    --pine: 160 50% 20%;
-    --pine-dark: 160 60% 12%;
-    --pine-medium: 160 40% 30%;
-    --pine-light: 160 30% 85%;
+    --brand-green: 122 40% 50%;
+    --brand-green-dark: 122 45% 35%;
+    --brand-green-light: 122 35% 85%;
+    
+    /* Legacy emerald tokens (mapped to new theme) */
+    --emerald: 122 40% 50%;
+    --emerald-dark: 122 45% 35%;
+    --emerald-light: 122 35% 85%;
+    
+    --pine: 215 50% 25%;
+    --pine-dark: 215 60% 18%;
+    --pine-medium: 215 45% 35%;
+    --pine-light: 215 30% 90%;
     
     /* System Colors */
-    --ehs-color: 158 64% 40%;
+    --ehs-color: 122 40% 50%;
     --eqms-color: 270 60% 50%;
     --esg-color: 210 80% 50%;
     --grc-color: 30 80% 50%;
@@ -62,14 +73,14 @@
     --glass: 0 0% 100% / 0.7;
     --glass-border: 0 0% 100% / 0.3;
     
-    --sidebar-background: 160 60% 12%;
+    --sidebar-background: 215 60% 18%;
     --sidebar-foreground: 0 0% 96%;
-    --sidebar-primary: 158 64% 40%;
+    --sidebar-primary: 215 60% 43%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 160 40% 20%;
+    --sidebar-accent: 215 45% 25%;
     --sidebar-accent-foreground: 0 0% 96%;
-    --sidebar-border: 160 30% 20%;
-    --sidebar-ring: 158 64% 40%;
+    --sidebar-border: 215 40% 25%;
+    --sidebar-ring: 215 60% 43%;
   }
 }
 
@@ -117,7 +128,7 @@
   
   .glass-tab-active {
     @apply bg-primary text-primary-foreground border-primary shadow-lg;
-    box-shadow: 0 4px 20px hsl(var(--emerald) / 0.35);
+    box-shadow: 0 4px 20px hsl(var(--primary) / 0.35);
   }
   
   /* Hero Glassmorphic Container */
@@ -135,9 +146,9 @@
   .header-gradient {
     background: linear-gradient(
       135deg,
-      hsl(160 60% 11%) 0%,
-      hsl(158 50% 16%) 50%,
-      hsl(160 55% 13%) 100%
+      hsl(215 60% 20%) 0%,
+      hsl(215 55% 28%) 50%,
+      hsl(215 60% 22%) 100%
     );
   }
   
@@ -197,7 +208,7 @@
   }
   
   .glow-effect {
-    box-shadow: 0 0 25px hsl(var(--emerald) / 0.2);
+    box-shadow: 0 0 25px hsl(var(--primary) / 0.2);
   }
 }
 

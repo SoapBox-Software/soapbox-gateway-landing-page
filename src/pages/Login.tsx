@@ -30,35 +30,35 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Soft radial gradient background */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#F4FBF8_0%,_#E1F1EA_100%)]" />
+      {/* Soft radial gradient background - blue/green theme */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#F4F8FC_0%,_#E1EBF5_100%)]" />
       
       {/* Subtle floating abstract shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-[15%] w-32 h-32 rounded-full bg-[#2EA47D]/8 blur-3xl" />
-        <div className="absolute top-40 right-[20%] w-48 h-48 rounded-full bg-[#1F8F6B]/6 blur-3xl" />
-        <div className="absolute bottom-32 left-[25%] w-40 h-40 rounded-full bg-[#2EA47D]/5 blur-3xl" />
-        <div className="absolute top-16 right-[35%] w-24 h-24 rounded-full bg-[#E1F1EA]/80 blur-2xl" />
-        <div className="absolute bottom-20 right-[15%] w-36 h-36 rounded-full bg-[#2EA47D]/4 blur-3xl" />
+        <div className="absolute top-20 left-[15%] w-32 h-32 rounded-full bg-[#2d5ab0]/8 blur-3xl" />
+        <div className="absolute top-40 right-[20%] w-48 h-48 rounded-full bg-[#4db051]/6 blur-3xl" />
+        <div className="absolute bottom-32 left-[25%] w-40 h-40 rounded-full bg-[#2d5ab0]/5 blur-3xl" />
+        <div className="absolute top-16 right-[35%] w-24 h-24 rounded-full bg-[#E1EBF5]/80 blur-2xl" />
+        <div className="absolute bottom-20 right-[15%] w-36 h-36 rounded-full bg-[#4db051]/4 blur-3xl" />
       </div>
 
       {/* Decorative floating UI elements at top */}
       <div className="absolute top-6 left-1/2 -translate-x-1/2 w-full max-w-3xl h-48 pointer-events-none">
         <div className="absolute top-8 left-[18%] w-14 h-14 rounded-2xl bg-white/70 backdrop-blur-sm border border-white/80 shadow-lg flex items-center justify-center">
-          <div className="w-7 h-7 rounded-lg bg-[#2EA47D]/25" />
+          <div className="w-7 h-7 rounded-lg bg-[#2d5ab0]/25" />
         </div>
         <div className="absolute top-4 left-[35%] w-10 h-10 rounded-xl bg-white/50 backdrop-blur-sm border border-white/60 shadow-md" />
         <div className="absolute top-12 right-[18%] w-36 h-24 rounded-xl bg-white/75 backdrop-blur-sm border border-white/80 shadow-lg p-3">
-          <div className="w-full h-2.5 rounded bg-[#2EA47D]/35 mb-2" />
-          <div className="w-4/5 h-2 rounded bg-[#D6E5DE]" />
-          <div className="w-3/5 h-2 rounded bg-[#D6E5DE] mt-1.5" />
+          <div className="w-full h-2.5 rounded bg-[#2d5ab0]/35 mb-2" />
+          <div className="w-4/5 h-2 rounded bg-[#D6DEE5]" />
+          <div className="w-3/5 h-2 rounded bg-[#D6DEE5] mt-1.5" />
         </div>
-        <div className="absolute top-6 right-[38%] w-11 h-11 rounded-xl bg-[#2EA47D] shadow-lg flex items-center justify-center">
+        <div className="absolute top-6 right-[38%] w-11 h-11 rounded-xl bg-[#4db051] shadow-lg flex items-center justify-center">
           <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <div className="absolute top-20 left-[28%] w-8 h-8 rounded-lg bg-[#F0E6F6]/80 backdrop-blur-sm border border-white/60 shadow-md" />
+        <div className="absolute top-20 left-[28%] w-8 h-8 rounded-lg bg-[#E6F0F6]/80 backdrop-blur-sm border border-white/60 shadow-md" />
       </div>
       
       <div className="relative z-10 w-full max-w-md px-4 animate-fade-in mt-20">
@@ -67,7 +67,7 @@ const Login = () => {
           <div className="bg-white/60 backdrop-blur-sm rounded-2xl px-6 py-3 border border-white/70 shadow-sm">
             <img 
               src={logo} 
-              alt="SOAPBOX.CLOUD" 
+              alt="SOAPBOX" 
               className="h-14"
             />
           </div>
@@ -75,50 +75,50 @@ const Login = () => {
 
         {/* Header Text */}
         <div className="text-center mb-8">
-          <h1 className="text-[34px] font-bold text-[#0F2A1F] mb-3">
+          <h1 className="text-[34px] font-bold text-[#1a3a5c] mb-3">
             Sign In
           </h1>
-          <p className="text-[#2C3E35] font-medium text-lg mb-3">
+          <p className="text-[#2d4a6a] font-medium text-lg mb-3">
             Engineering the Operating System for Regulated Work.
           </p>
-          <p className="text-[#4A5F57] text-sm leading-[1.6] max-w-[520px] mx-auto">
+          <p className="text-[#4a6580] text-sm leading-[1.6] max-w-[520px] mx-auto">
             A unified, cloud-native foundation for safety, risk, and compliance — built with clarity, resilience, and governance at its core.
           </p>
         </div>
 
         {/* Login Card */}
         <div className="bg-white/[0.95] backdrop-blur-md rounded-[18px] p-8 md:p-9 shadow-[0_30px_60px_rgba(0,0,0,0.08)] border border-white/60 transition-all duration-300">
-          <h2 className="text-lg font-semibold text-[#0F2A1F] mb-6 text-center">
-            Sign in to Soapbox.cloud
+          <h2 className="text-lg font-semibold text-[#1a3a5c] mb-6 text-center">
+            Sign in to Soapbox
           </h2>
           
           <form onSubmit={handleLogin} className="space-y-5">
             <div className="relative group">
-              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#4A5F57] transition-colors group-focus-within:text-[#2EA47D]" />
+              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#4a6580] transition-colors group-focus-within:text-[#2d5ab0]" />
               <Input
                 type="email"
                 placeholder="Email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="pl-12 h-[52px] bg-white border-[#D6E5DE] text-[#0F2A1F] placeholder:text-[#7A8F86] rounded-xl transition-all focus:border-[#2EA47D] focus:ring-[3px] focus:ring-[rgba(46,164,125,0.15)]"
+                className="pl-12 h-[52px] bg-white border-[#D6DEE5] text-[#1a3a5c] placeholder:text-[#7A8F9A] rounded-xl transition-all focus:border-[#2d5ab0] focus:ring-[3px] focus:ring-[rgba(45,90,176,0.15)]"
                 required
               />
             </div>
 
             <div>
               <div className="relative group">
-                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#4A5F57] transition-colors group-focus-within:text-[#2EA47D]" />
+                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-[#4a6580] transition-colors group-focus-within:text-[#2d5ab0]" />
                 <Input
                   type="password"
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="pl-12 pr-32 h-[52px] bg-white border-[#D6E5DE] text-[#0F2A1F] placeholder:text-[#7A8F86] rounded-xl transition-all focus:border-[#2EA47D] focus:ring-[3px] focus:ring-[rgba(46,164,125,0.15)]"
+                  className="pl-12 pr-32 h-[52px] bg-white border-[#D6DEE5] text-[#1a3a5c] placeholder:text-[#7A8F9A] rounded-xl transition-all focus:border-[#2d5ab0] focus:ring-[3px] focus:ring-[rgba(45,90,176,0.15)]"
                   required
                 />
                 <button
                   type="button"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-medium text-[#2EA47D] hover:text-[#1F8F6B] transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-sm font-medium text-[#2d5ab0] hover:text-[#1e4a96] transition-colors"
                 >
                   Forgot password?
                 </button>
@@ -130,11 +130,11 @@ const Login = () => {
                 id="remember"
                 checked={rememberMe}
                 onCheckedChange={(checked) => setRememberMe(checked as boolean)}
-                className="border-[#D6E5DE] data-[state=checked]:bg-[#2EA47D] data-[state=checked]:border-[#2EA47D]"
+                className="border-[#D6DEE5] data-[state=checked]:bg-[#2d5ab0] data-[state=checked]:border-[#2d5ab0]"
               />
               <label
                 htmlFor="remember"
-                className="text-sm text-[#3E5B52] cursor-pointer select-none"
+                className="text-sm text-[#3E5B6E] cursor-pointer select-none"
               >
                 Remember me
               </label>
@@ -142,7 +142,7 @@ const Login = () => {
 
             <Button
               type="submit"
-              className="w-full bg-gradient-to-br from-[#2EA47D] to-[#1F8F6B] text-white font-semibold h-[54px] rounded-[14px] shadow-[0_10px_24px_rgba(46,164,125,0.35)] hover:shadow-[0_14px_28px_rgba(46,164,125,0.4)] hover:-translate-y-0.5 hover:from-[#279971] hover:to-[#1A7D5E] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+              className="w-full bg-gradient-to-br from-[#2d5ab0] to-[#1e4a96] text-white font-semibold h-[54px] rounded-[14px] shadow-[0_10px_24px_rgba(45,90,176,0.35)] hover:shadow-[0_14px_28px_rgba(45,90,176,0.4)] hover:-translate-y-0.5 hover:from-[#3566c0] hover:to-[#2d5ab0] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
             >
               Sign in
             </Button>
@@ -152,10 +152,10 @@ const Login = () => {
           <div className="mt-7">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
-                <div className="w-full border-t border-[#D6E5DE]"></div>
+                <div className="w-full border-t border-[#D6DEE5]"></div>
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-4 bg-white/95 text-[#5A7068]">Or sign in with</span>
+                <span className="px-4 bg-white/95 text-[#5A7080]">Or sign in with</span>
               </div>
             </div>
             
@@ -163,7 +163,7 @@ const Login = () => {
               <button
                 type="button"
                 onClick={() => handleSSOLogin("google")}
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6E5DE] rounded-xl hover:bg-[#F8FCFA] hover:border-[#B8D4C8] transition-all duration-200 shadow-sm hover:shadow-md"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6DEE5] rounded-xl hover:bg-[#F8FAFC] hover:border-[#B8C8D8] transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24">
                   <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -175,7 +175,7 @@ const Login = () => {
               <button
                 type="button"
                 onClick={() => handleSSOLogin("microsoft")}
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6E5DE] rounded-xl hover:bg-[#F8FCFA] hover:border-[#B8D4C8] transition-all duration-200 shadow-sm hover:shadow-md"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6DEE5] rounded-xl hover:bg-[#F8FAFC] hover:border-[#B8C8D8] transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24">
                   <path fill="#00A4EF" d="M11.4 24H0V12.6h11.4V24z"/>
@@ -187,7 +187,7 @@ const Login = () => {
               <button
                 type="button"
                 onClick={() => handleSSOLogin("apple")}
-                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6E5DE] rounded-xl hover:bg-[#F8FCFA] hover:border-[#B8D4C8] transition-all duration-200 shadow-sm hover:shadow-md"
+                className="flex-1 flex items-center justify-center gap-2 px-4 py-3.5 bg-white border border-[#D6DEE5] rounded-xl hover:bg-[#F8FAFC] hover:border-[#B8C8D8] transition-all duration-200 shadow-sm hover:shadow-md"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="#000000">
                   <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
@@ -198,11 +198,11 @@ const Login = () => {
           
           {/* Footer links inside card */}
           <div className="mt-7 flex justify-center gap-3 text-sm">
-            <a href="#" className="text-[#4A5F57] hover:text-[#2EA47D] hover:underline transition-colors">
+            <a href="#" className="text-[#4a6580] hover:text-[#2d5ab0] hover:underline transition-colors">
               Privacy Policy
             </a>
-            <span className="text-[#B8D4C8]">•</span>
-            <a href="#" className="text-[#4A5F57] hover:text-[#2EA47D] hover:underline transition-colors">
+            <span className="text-[#B8C8D8]">•</span>
+            <a href="#" className="text-[#4a6580] hover:text-[#2d5ab0] hover:underline transition-colors">
               Terms of Use
             </a>
           </div>
@@ -210,15 +210,15 @@ const Login = () => {
         
         {/* Create account link */}
         <p className="text-center mt-7 text-sm">
-          <span className="text-[#4A5F57]">New here?</span>{" "}
-          <button className="text-[#2EA47D] font-semibold hover:underline transition-colors">
+          <span className="text-[#4a6580]">New here?</span>{" "}
+          <button className="text-[#2d5ab0] font-semibold hover:underline transition-colors">
             Create an account
           </button>
         </p>
         
         {/* Copyright */}
-        <p className="text-center mt-4 text-xs text-[#5A7068]">
-          © 2024 Soapbox.cloud. All rights reserved.
+        <p className="text-center mt-4 text-xs text-[#5A7080]">
+          © 2024 Soapbox. All rights reserved.
         </p>
       </div>
     </div>
