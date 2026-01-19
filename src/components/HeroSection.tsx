@@ -24,7 +24,7 @@ const HeroSection = () => {
             <div className="space-y-3">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
                   Welcome to{" "}
-                  <span className="text-primary">Soapbox</span>
+                  <span className="text-primary" style={{ fontFamily: "'Orbitron', sans-serif" }}>Soapbox</span>
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   Engineering the Operating System for Regulated Industries.
