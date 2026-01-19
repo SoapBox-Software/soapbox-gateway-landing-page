@@ -10,7 +10,7 @@ import {
   Stethoscope, BadgeCheck, Timer, Workflow, FileSearch, TrendingUp, Lightbulb,
   MapPin, Waves, Recycle, Car, DollarSign, LineChart, Megaphone, ClipboardPlus,
   UserCheck, Building, Headphones, FileCode, Calculator, Server, GitBranch,
-  Award, Siren, Phone, HelpCircle, Map, Compass, Share2, Fingerprint
+  Award, Siren, Phone, HelpCircle, Map, Compass, Share2, Fingerprint, LayoutDashboard
 } from "lucide-react";
 import { SystemType } from "@/components/SystemTabs";
 
@@ -32,6 +32,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
     {
       title: "Core EHS Engine",
       modules: [
+        { title: "Executive Console", description: "Executive dashboard for EHS oversight and analytics.", url: "https://id-preview--0d956257-b78e-45fe-baea-c5ebfd5be2b3.lovable.app/", icon: LayoutDashboard },
         { title: "Incident Management", description: "Reports, tracks, investigates, and closes incidents with SLAs.", url: "https://preview--ops-resolve-dash.lovable.app/dashboard", icon: AlertTriangle },
         { title: "Audit Management", description: "Streamlines audit planning, execution, and closure.", url: "https://preview--soapbox-audit-craft.lovable.app/dashboard", icon: ClipboardCheck },
         { title: "CAPA", description: "Manages corrective/preventive actions with workflows.", url: "https://preview--soapbox-capa-flow.lovable.app/", icon: FileCheck },
@@ -87,7 +88,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Training & Competency", description: "Track training and competency.", icon: GraduationCap, comingSoon: true },
         { title: "CAPA & Issue Resolution", description: "Corrective actions and issue management.", icon: FileCheck, comingSoon: true },
         { title: "Nonconformance Management", description: "Handle deviations and NCRs.", icon: FileWarning, comingSoon: true },
-        { title: "Quality Events", description: "Quality incident management.", icon: AlertTriangle, comingSoon: true },
+        { title: "Quality Events & Incident Management", description: "Quality incident management.", url: "https://id-preview--05abec7d-6f9b-4d48-b83e-5d91a91118ea.lovable.app/", icon: AlertTriangle },
         { title: "Audit & Inspection", description: "Quality audits and inspections.", icon: ClipboardCheck, comingSoon: true },
         { title: "Quality Risk Management", description: "Risk assessment for quality.", icon: Shield, comingSoon: true },
         { title: "Change Management", description: "Quality change control.", icon: RefreshCw, comingSoon: true },
@@ -96,10 +97,10 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Calibration & Equipment Management", description: "Equipment calibration tracking.", url: "https://id-preview--1969ee24-59d4-49a3-a056-351e0d1c5849.lovable.app/", icon: Settings },
         { title: "Quality Inspections & Product Release", description: "Product inspection and release.", url: "https://id-preview--96ff7a12-4629-431f-acf0-a56383f4a798.lovable.app/", icon: Search },
         { title: "Product Lifecycle Quality", description: "Quality across product lifecycle.", url: "https://id-preview--abd0bea0-8945-456d-9fe1-fd81b2fc1556.lovable.app/", icon: Layers },
-        { title: "Validation Management", description: "Validation and verification.", icon: BadgeCheck, comingSoon: true },
+        { title: "Validation Management", description: "Validation and verification.", url: "https://id-preview--c60da579-6f19-4fa2-bf83-25bbad8f29ee.lovable.app/", icon: BadgeCheck },
         { title: "SPC & Quality Analytics", description: "Statistical process control.", icon: BarChart3, comingSoon: true },
         { title: "KPI & Dashboards", description: "Performance dashboards.", icon: PieChart, comingSoon: true },
-        { title: "Management Review", description: "Management review module.", icon: Users, comingSoon: true },
+        { title: "Management Review", description: "Management review module.", url: "https://id-preview--af7b0073-1baf-4191-a1ec-b75156c1aff1.lovable.app/", icon: Users },
         { title: "Supplier Qualification", description: "Supplier qualification workflow.", icon: UserCheck, comingSoon: true },
       ]
     },
