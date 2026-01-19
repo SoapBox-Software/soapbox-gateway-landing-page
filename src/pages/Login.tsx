@@ -89,7 +89,7 @@ const Login = () => {
         {/* Login Card */}
         <div className="bg-white/[0.95] backdrop-blur-md rounded-[18px] p-8 md:p-9 shadow-[0_30px_60px_rgba(0,0,0,0.08)] border border-white/60 transition-all duration-300">
           <h2 className="text-lg font-semibold text-[#1F2A2E] mb-6 text-center">
-            Sign in to Soapbox
+            Sign in to <span style={{ fontFamily: "'Orbitron', sans-serif" }}>Soapbox</span>
           </h2>
           
           <form onSubmit={handleLogin} className="space-y-5">
@@ -218,7 +218,7 @@ const Login = () => {
         
         {/* Copyright */}
         <p className="text-center mt-4 text-xs text-[#5A7080]">
-          © 2024 Soapbox. All rights reserved.
+          © 2024 <span style={{ fontFamily: "'Orbitron', sans-serif" }}>Soapbox</span>. All rights reserved.
         </p>
       </div>
     </div>
