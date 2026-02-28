@@ -24,7 +24,7 @@ const HeroSection = () => {
             <div className="space-y-6">
             <div className="inline-flex flex-col space-y-3">
                 <img src={soapboxCloudLogo} alt="Soapbox.Cloud" className="h-14 md:h-16 lg:h-20 w-auto object-contain shadow-none" />
-                <p className="text-lg text-muted-foreground leading-relaxed text-center md:text-base font-medium">
+                <p className="text-lg text-muted-foreground leading-relaxed text-center font-medium md:text-xl">
                   Engineering the Operating System 
 for Regulated Industries.
                 </p>
