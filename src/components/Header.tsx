@@ -11,7 +11,7 @@ import logo from "@/assets/logo.svg";
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 header-gradient shadow-lg">
-      <div className="container mx-auto px-6 py-3 pb-px">
+      <div className="container mx-auto px-6 py-3 pb-[12px]">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
