@@ -80,6 +80,26 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       ]
     }
   ],
+  "Sustainability": [
+    {
+      title: "Sustainability Modules",
+      modules: [
+        { title: "Energy & Resource Management", description: "Monitor and optimize energy and resource consumption.", url: "https://id-preview--1f63954e-e9f6-46e9-99e0-1e004b9441de.lovable.app/", icon: Zap },
+        { title: "Environmental Footprint", description: "Track and reduce environmental footprint across operations.", url: "https://id-preview--e954506b-ebbd-4229-8fd1-225b114a0b34.lovable.app/", icon: Leaf },
+        { title: "Materiality & Impact Assessment", description: "Identify and prioritize material sustainability topics.", url: "https://id-preview--907351d6-40f7-42e6-9e93-2595acb776c1.lovable.app/", icon: Target },
+        { title: "Social & Workforce Sustainability", description: "Manage social impact and workforce sustainability programs.", url: "https://id-preview--16221266-68b8-4b65-89c8-c5501aaecf26.lovable.app/dashboard", icon: Users },
+        { title: "Sustainability Strategy & Governance", description: "Define sustainability strategy, goals, and governance.", url: "https://id-preview--7b290b90-a22d-4b83-ae47-768e3f2f0e4a.lovable.app/dashboard", icon: Compass },
+        { title: "Sustainability Risk & Compliance", description: "Identify and manage sustainability-related risks and compliance.", url: "https://id-preview--8cecd1fd-95f4-4cbf-8933-831618d1a6f7.lovable.app/", icon: Shield },
+        { title: "Supply Chain Sustainability", description: "Assess and improve sustainability across the supply chain.", url: "https://id-preview--dd1758f6-20d8-44a9-b0b7-9a32fbf3e805.lovable.app/", icon: Truck },
+        { title: "Initiatives & Program Management", description: "Plan, execute, and track sustainability initiatives.", url: "https://id-preview--ab4e31c2-9959-40c3-9022-5b04f825c6ec.lovable.app/", icon: Lightbulb },
+        { title: "Performance Management & KPIs", description: "Track sustainability KPIs and performance metrics.", url: "https://id-preview--b66a1d78-aa75-40f3-b7b5-ed5d0770c4ea.lovable.app/", icon: Gauge },
+        { title: "Reporting & Disclosure", description: "Generate sustainability reports and regulatory disclosures.", url: "https://id-preview--44f0b58a-8d07-4522-932a-f9e79e72ef33.lovable.app/", icon: FileSpreadsheet },
+        { title: "Assurance, Audit & Data Integrity", description: "Ensure data integrity with audit trails and assurance workflows.", url: "https://id-preview--fe02089b-7096-4908-80c1-44e5761388aa.lovable.app/", icon: BadgeCheck },
+        { title: "Data Management & Integration", description: "Centralized data management and system integrations.", url: "https://id-preview--d09937a7-750a-4a6a-946d-de90ff796777.lovable.app/", icon: Database },
+        { title: "Advanced Analytics & AI", description: "AI-powered sustainability analytics and insights.", url: "https://id-preview--3d7f4d90-71ad-40ce-8e8f-10a7b0f40696.lovable.app/", icon: Brain },
+      ]
+    }
+  ],
   "eQMS": [
     {
       title: "Core eQMS Engine",
