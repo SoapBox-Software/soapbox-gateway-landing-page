@@ -6,7 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 
 const Header = () => {
   return (
