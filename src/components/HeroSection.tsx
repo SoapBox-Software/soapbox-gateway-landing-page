@@ -40,10 +40,10 @@ const HeroSection = () => {
                   <Shield className="h-3.5 w-3.5" />
                   AI-ready
                 </span>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                  <Users className="h-3.5 w-3.5" />
-                  Compliance-focused
-                </span>
+                
+
+
+
               </div>
             </div>
             
