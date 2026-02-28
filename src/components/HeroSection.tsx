@@ -18,7 +18,7 @@ const HeroSection = () => {
       </div>
       
       <div className="container mx-auto">
-        <div className="glass-hero p-8 md:p-10 shadow-xl px-[10px] py-0">
+        <div className="glass-hero p-8 md:p-10 shadow-xl py-0 px-0">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Left: Text Content */}
             <div className="space-y-6">
