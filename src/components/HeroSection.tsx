@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   ArrowRight 
 } from "lucide-react";
+import soapboxCloudLogo from "@/assets/soapbox-cloud-logo.png";
 
 const HeroSection = () => {
   return (
@@ -22,10 +23,7 @@ const HeroSection = () => {
             {/* Left: Text Content */}
             <div className="space-y-6">
             <div className="space-y-3">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
-                  Welcome to{" "}
-                  <span className="text-primary" style={{ fontFamily: "'Orbitron', sans-serif" }}>Soapbox</span>
-                </h1>
+                <img src={soapboxCloudLogo} alt="Soapbox.Cloud" className="h-14 md:h-16 lg:h-20 w-auto" />
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   Engineering the Operating System for Regulated Industries.
                 </p>
