@@ -19,7 +19,7 @@ const HeroSection = () => {
       
       <div className="container mx-auto">
         <div className="glass-hero p-8 md:p-10 shadow-xl py-0 px-0">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 items-center px-[10px]">
             {/* Left: Text Content */}
             <div className="space-y-6">
             <div className="inline-flex flex-col space-y-3">
