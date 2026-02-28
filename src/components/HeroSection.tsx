@@ -18,7 +18,7 @@ const HeroSection = () => {
       </div>
       
       <div className="container mx-auto">
-        <div className="glass-hero p-8 md:p-10 shadow-xl">
+        <div className="glass-hero p-8 md:p-10 shadow-xl px-[10px] py-0">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Left: Text Content */}
             <div className="space-y-6">
@@ -32,9 +32,9 @@ const HeroSection = () => {
               
               {/* Feature pills */}
               <div className="flex flex-wrap gap-2 pt-2">
-                <span className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full px-3 py-1.5">
-                  <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0" />
-                  An Intelligent Operating System for Resilient and Responsible Enterprise Operations
+                <span className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full px-[12px] py-[6px]"><i class="fa-utility fa-semibold fa-circle-check"></i>✔ An Intelligent Operating System for Resilient and Responsible Enterprise Operations
+                  <CheckCircle2 className="h-3.5 w-3.5" />
+                  Enterprise-grade
                 </span>
                 
 
