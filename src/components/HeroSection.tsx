@@ -36,10 +36,10 @@ const HeroSection = () => {
                   <CheckCircle2 className="h-3.5 w-3.5" />
                   Enterprise-grade
                 </span>
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                  <Shield className="h-3.5 w-3.5" />
-                  AI-ready
-                </span>
+                
+
+
+
                 
 
 
