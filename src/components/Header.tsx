@@ -4,14 +4,14 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  DropdownMenuTrigger } from
+"@/components/ui/dropdown-menu";
 import logo from "@/assets/logo.svg";
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 header-gradient shadow-lg">
-      <div className="container mx-auto px-6 py-3">
+      <div className="container mx-auto px-6 py-3 pb-px">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
@@ -25,8 +25,8 @@ const Header = () => {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-foreground/70 hover:text-foreground hover:bg-foreground/10 relative"
-                >
+                  className="text-foreground/70 hover:text-foreground hover:bg-foreground/10 relative">
+
                   <Bell className="h-5 w-5" />
                   <span className="absolute top-1.5 right-1.5 h-2 w-2 bg-red-500 rounded-full"></span>
                 </Button>
@@ -53,8 +53,8 @@ const Header = () => {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="text-foreground/70 hover:text-foreground hover:bg-foreground/10"
-                >
+                  className="text-foreground/70 hover:text-foreground hover:bg-foreground/10">
+
                   <User className="h-5 w-5" />
                 </Button>
               </DropdownMenuTrigger>
@@ -67,8 +67,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>);
+
 };
 
 export default Header;
