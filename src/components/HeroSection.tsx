@@ -32,9 +32,9 @@ const HeroSection = () => {
               
               {/* Feature pills */}
               <div className="flex flex-wrap gap-2 pt-2">
-                <span className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full px-[12px] py-[6px]"><i class="fa-utility fa-semibold fa-circle-check"></i>✔ An Intelligent Operating System for Resilient and Responsible Enterprise Operations
-                  <CheckCircle2 className="h-3.5 w-3.5" />
-                  Enterprise-grade
+                <span className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-sm font-medium rounded-full px-3 py-1.5">
+                  <CheckCircle2 className="h-3.5 w-3.5 flex-shrink-0" />
+                  An Intelligent Operating System for Resilient and Responsible Enterprise Operations
                 </span>
                 
 
