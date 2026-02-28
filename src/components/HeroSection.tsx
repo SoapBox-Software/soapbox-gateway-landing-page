@@ -1,11 +1,11 @@
-import { 
-  BarChart3, 
-  Shield, 
-  Users, 
-  Layers, 
+import {
+  BarChart3,
+  Shield,
+  Users,
+  Layers,
   CheckCircle2,
-  ArrowRight 
-} from "lucide-react";
+  ArrowRight } from
+"lucide-react";
 import soapboxCloudLogo from "@/assets/soapbox-cloud-logo.png";
 
 const HeroSection = () => {
@@ -25,7 +25,8 @@ const HeroSection = () => {
             <div className="space-y-3">
                 <img src={soapboxCloudLogo} alt="Soapbox.Cloud" className="h-14 md:h-16 lg:h-20 w-auto" />
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                  Engineering the Operating System for Regulated Industries.
+                  Engineering the Operating System 
+for Regulated Industries.
                 </p>
               </div>
               
@@ -111,8 +112,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
 };
 
 export default HeroSection;
