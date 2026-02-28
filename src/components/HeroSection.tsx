@@ -22,7 +22,7 @@ const HeroSection = () => {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Left: Text Content */}
             <div className="space-y-6">
-            <div className="space-y-3">
+            <div className="inline-flex flex-col space-y-3">
                 <img src={soapboxCloudLogo} alt="Soapbox.Cloud" className="h-14 md:h-16 lg:h-20 w-auto" />
                 <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
                   Engineering the Operating System 
