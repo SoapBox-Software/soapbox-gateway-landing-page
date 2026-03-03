@@ -128,7 +128,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       title: "Advanced Modules",
       modules: [
         { title: "SPC Charts & Run Rules", description: "Advanced SPC charting.", url: "https://id-preview--a10359fd-a43c-4114-96ee-021fdd34f9fa.lovable.app/", icon: LineChart },
-        { title: "Supplier Portal", description: "Supplier collaboration portal.", icon: Globe, comingSoon: true },
+        { title: "Supplier Self Service Portal", description: "Supplier collaboration portal.", url: "https://id-preview--a7ad2276-67c5-4519-80be-93d106ad2b47.lovable.app/", icon: Globe },
         { title: "CAPA Effectiveness", description: "CAPA effectiveness framework.", url: "https://id-preview--40b9e288-642b-48af-8a1e-d4bb6947d6c6.lovable.app/", icon: Target },
         { title: "Material Traceability", description: "Lot genealogy and traceability.", url: "https://id-preview--4463bfec-b576-490e-8a0d-8cb46b9d4d39.lovable.app/", icon: Package },
         { title: "Lab Investigation (LIR)", description: "Lab investigation reporting.", url: "https://id-preview--b292ca58-17a4-4bc9-a352-6acef79b4f02.lovable.app/", icon: Microscope },
