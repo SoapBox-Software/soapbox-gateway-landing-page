@@ -133,7 +133,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Material Traceability", description: "Lot genealogy and traceability.", url: "https://id-preview--4463bfec-b576-490e-8a0d-8cb46b9d4d39.lovable.app/", icon: Package },
         { title: "Lab Investigation (LIR)", description: "Lab investigation reporting.", url: "https://id-preview--b292ca58-17a4-4bc9-a352-6acef79b4f02.lovable.app/", icon: Microscope },
         { title: "Forms & Checklists", description: "Forms and checklists framework.", url: "https://id-preview--f022a1ae-a27e-4ccb-85c8-77e497f7071e.lovable.app/", icon: ClipboardPlus },
-        { title: "Training Verification", description: "Training effectiveness verification.", icon: Award, comingSoon: true },
+        
         { title: "Validation Re-assessment & Periodic Review", description: "Periodic validation review.", url: "https://id-preview--11362f76-ce21-4e20-9118-ad9906413c43.lovable.app/", icon: Timer },
       ]
     }
