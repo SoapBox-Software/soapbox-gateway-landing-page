@@ -104,14 +104,14 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
     {
       title: "Core eQMS Engine",
       modules: [
-        { title: "Document & Records Control", description: "Manage documents with version control.", icon: FileText, comingSoon: true },
-        { title: "Training & Competency", description: "Track training and competency.", icon: GraduationCap, comingSoon: true },
-        { title: "CAPA & Issue Resolution", description: "Corrective actions and issue management.", icon: FileCheck, comingSoon: true },
-        { title: "Nonconformance Management", description: "Handle deviations and NCRs.", icon: FileWarning, comingSoon: true },
+        { title: "Document & Records Control", description: "Manage documents with version control.", url: "https://id-preview--42fa2e52-fd78-40e1-b451-be0a881c8195.lovable.app/", icon: FileText },
+        { title: "Training & Competency", description: "Track training and competency.", url: "https://id-preview--63ac40ad-200e-4d94-8c37-124cfbdd6334.lovable.app/", icon: GraduationCap },
+        { title: "CAPA & Issue Resolution", description: "Corrective actions and issue management.", url: "https://preview--soapbox-capa-flow.lovable.app/", icon: FileCheck },
+        { title: "Nonconformance Management", description: "Handle deviations and NCRs.", url: "https://id-preview--6223ccbc-ecf4-42dd-8762-474380de042e.lovable.app/", icon: FileWarning },
         { title: "Quality Events & Incident Management", description: "Quality incident management.", url: "https://id-preview--05abec7d-6f9b-4d48-b83e-5d91a91118ea.lovable.app/", icon: AlertTriangle },
-        { title: "Audit & Inspection", description: "Quality audits and inspections.", icon: ClipboardCheck, comingSoon: true },
-        { title: "Quality Risk Management", description: "Risk assessment for quality.", icon: Shield, comingSoon: true },
-        { title: "Change Management", description: "Quality change control.", icon: RefreshCw, comingSoon: true },
+        { title: "Audit & Inspection", description: "Quality audits and inspections.", url: "https://preview--soapbox-audit-craft.lovable.app/dashboard", icon: ClipboardCheck },
+        { title: "Quality Risk Management", description: "Risk assessment for quality.", url: "https://preview--random-page.lovable.app/", icon: Shield },
+        { title: "Change Management", description: "Quality change control.", url: "https://id-preview--736491cb-a76c-4cd6-94fc-085c7c60cfe5.lovable.app/", icon: RefreshCw },
         { title: "Complaint & Customer Feedback", description: "Customer feedback management.", url: "https://id-preview--629aff38-aa42-4edd-807b-890c36a1b069.lovable.app/", icon: Megaphone },
         { title: "Supplier & Vendor Quality Management", description: "Vendor quality management.", url: "https://id-preview--32e5665f-bc7e-4f5c-ab35-27714a7bf028.lovable.app/", icon: Truck },
         { title: "Calibration & Equipment Management", description: "Equipment calibration tracking.", url: "https://id-preview--1969ee24-59d4-49a3-a056-351e0d1c5849.lovable.app/", icon: Settings },
@@ -132,9 +132,9 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "CAPA Effectiveness", description: "CAPA effectiveness framework.", url: "https://id-preview--40b9e288-642b-48af-8a1e-d4bb6947d6c6.lovable.app/", icon: Target },
         { title: "Material Traceability", description: "Lot genealogy and traceability.", url: "https://id-preview--4463bfec-b576-490e-8a0d-8cb46b9d4d39.lovable.app/", icon: Package },
         { title: "Lab Investigation (LIR)", description: "Lab investigation reporting.", url: "https://id-preview--b292ca58-17a4-4bc9-a352-6acef79b4f02.lovable.app/", icon: Microscope },
-        { title: "Forms & Checklists", description: "Forms and checklists framework.", icon: ClipboardPlus, comingSoon: true },
+        { title: "Forms & Checklists", description: "Forms and checklists framework.", url: "https://id-preview--f022a1ae-a27e-4ccb-85c8-77e497f7071e.lovable.app/", icon: ClipboardPlus },
         { title: "Training Verification", description: "Training effectiveness verification.", icon: Award, comingSoon: true },
-        { title: "Validation Review", description: "Periodic validation review.", icon: Timer, comingSoon: true },
+        { title: "Validation Re-assessment & Periodic Review", description: "Periodic validation review.", url: "https://id-preview--11362f76-ce21-4e20-9118-ad9906413c43.lovable.app/", icon: Timer },
       ]
     }
   ],
