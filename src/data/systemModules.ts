@@ -71,7 +71,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Artificial Intelligence Module", description: "AI module for automation.", icon: Brain, comingSoon: true },
         { title: "BCM", description: "Business continuity management.", icon: Building2, comingSoon: true },
         { title: "Emergency Management", description: "Emergency response and planning.", icon: Siren, comingSoon: true },
-        { title: "Sustainability Management", description: "Sustainability tracking and reporting.", icon: Leaf, comingSoon: true },
+        { title: "Operational Sustainability", description: "Sustainability tracking and reporting.", icon: Leaf, comingSoon: true },
         { title: "Legal & Regulatory Change", description: "Monitor regulatory changes.", icon: Scale, comingSoon: true },
         { title: "Environmental Data", description: "Environmental data management.", icon: Database, comingSoon: true },
         { title: "Contractor & Supplier", description: "Contractor and supplier management.", icon: Truck, comingSoon: true },
