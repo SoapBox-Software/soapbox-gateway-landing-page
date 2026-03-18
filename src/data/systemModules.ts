@@ -70,13 +70,13 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Advanced Predictive Analytics", description: "AI-powered predictive analytics.", icon: TrendingUp, comingSoon: true },
         { title: "Artificial Intelligence Module", description: "AI module for automation.", icon: Brain, comingSoon: true },
         { title: "BCM", description: "Business continuity management.", icon: Building2, comingSoon: true },
-        { title: "Emergency Management", description: "Emergency response and planning.", icon: Siren, comingSoon: true },
-        { title: "Operational Sustainability", description: "Sustainability tracking and reporting.", icon: Leaf, comingSoon: true },
+        { title: "Emergency Management", description: "Emergency response and planning.", icon: Siren, url: "https://id-preview--c85647ec-95ea-4934-9b06-c8f2d35df228.lovable.app/" },
+        { title: "Operational Sustainability", description: "Sustainability tracking and reporting.", icon: Leaf, url: "https://id-preview--9ce71eee-3d3b-44a7-adf2-0412767bd887.lovable.app/" },
         { title: "Legal & Regulatory Change", description: "Monitor regulatory changes.", icon: Scale, comingSoon: true },
-        { title: "Environmental Data", description: "Environmental data management.", icon: Database, comingSoon: true },
+        { title: "Environmental Data", description: "Environmental data management.", icon: Database, url: "https://id-preview--3c453028-607e-4a2f-8480-ca21da5ca288.lovable.app/" },
         { title: "Contractor & Supplier", description: "Contractor and supplier management.", icon: Truck, comingSoon: true },
         { title: "Employee Wellbeing", description: "Wellbeing and mental health tracking.", icon: Heart, comingSoon: true },
-        { title: "Ergonomics Assessment", description: "Ergonomics evaluation tools.", icon: Activity, comingSoon: true },
+        { title: "Ergonomics Assessment", description: "Ergonomics evaluation tools.", icon: Activity, url: "https://id-preview--04b74b84-4fd7-464d-9bf0-b4268941f7e7.lovable.app/" },
       ]
     }
   ],
