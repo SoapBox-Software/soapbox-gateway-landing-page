@@ -43,7 +43,7 @@ const Dashboard = () => {
               <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">Privacy</a>
               <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">Support</a>
             </div>
-            <p className="text-sm text-foreground/60">© <span style={{ fontFamily: "'Orbitron', sans-serif" }}>Soapbox</span>.cloud 2025</p>
+            <p className="text-sm text-foreground/60">© SoapBox.cloud 2026</p>
           </div>
         </div>
       </footer>
