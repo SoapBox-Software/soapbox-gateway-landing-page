@@ -18,6 +18,13 @@ const Header = () => {
             <img src={logo} alt="SOAPBOX.CLOUD" className="h-9" />
           </div>
 
+          {/* Center Nav Links */}
+          <div className="flex gap-6 text-sm">
+            <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">Terms</a>
+            <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">Privacy</a>
+            <a href="#" className="text-foreground/60 hover:text-foreground transition-colors">Support</a>
+          </div>
+
           {/* Right Side Actions */}
           <div className="flex items-center space-x-2">
             <DropdownMenu>
