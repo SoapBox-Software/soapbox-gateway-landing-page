@@ -142,14 +142,14 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
     {
       title: "Core ESG Engine",
       modules: [
-        { title: "Data Collection", description: "ESG data ingestion.", icon: Database, comingSoon: true },
-        { title: "GHG Emissions", description: "Greenhouse gas management.", icon: Wind, comingSoon: true },
+        { title: "ESG Strategy, Governance & Operating Model", description: "ESG strategy and governance framework.", icon: Building, url: "https://id-preview--584b29ca-2720-4f3f-a525-f9a697786467.lovable.app/" },
+        { title: "ESG Reporting, Disclosure & Narrative Management", description: "ESG disclosure and reporting.", icon: FileSpreadsheet, url: "https://id-preview--d2b9ef1c-9de7-4ff6-8058-f1771dd4e305.lovable.app/" },
+        { title: "GHG Emissions Management", description: "Greenhouse gas management.", icon: Wind, url: "https://id-preview--5ac191a2-0eb3-4bd9-8a83-6bbad223d043.lovable.app/dashboard" },
+        { title: "Environmental Data Management", description: "Environmental data ingestion and management.", icon: Database, url: "https://id-preview--3c453028-607e-4a2f-8480-ca21da5ca288.lovable.app/" },
         { title: "Sustainability KPIs", description: "Sustainability KPI library.", icon: Gauge, comingSoon: true },
-        { title: "ESG Reporting", description: "ESG disclosure and reporting.", icon: FileSpreadsheet, comingSoon: true },
         { title: "Materiality Assessment", description: "Stakeholder mapping.", icon: Users, comingSoon: true },
         { title: "Supply Chain ESG", description: "Supply chain assessments.", icon: Truck, comingSoon: true },
         { title: "Social Impact", description: "Human rights management.", icon: Heart, comingSoon: true },
-        { title: "Governance Reporting", description: "Board reporting.", icon: Building, comingSoon: true },
         { title: "Targets & Roadmaps", description: "Sustainability roadmaps.", icon: Map, comingSoon: true },
         { title: "Carbon Accounting", description: "Carbon offsets tracking.", icon: Leaf, comingSoon: true },
         { title: "Data Quality", description: "Data quality assurance.", icon: BadgeCheck, comingSoon: true },
