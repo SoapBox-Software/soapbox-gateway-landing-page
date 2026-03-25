@@ -35,7 +35,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Executive Console", description: "Executive dashboard for EHS oversight and analytics.", url: "https://id-preview--0d956257-b78e-45fe-baea-c5ebfd5be2b3.lovable.app/", icon: LayoutDashboard },
         { title: "Incident Management", description: "Reports, tracks, investigates, and closes incidents with SLAs.", url: "https://preview--ops-resolve-dash.lovable.app/dashboard", icon: AlertTriangle },
         { title: "Audit Management", description: "Streamlines audit planning, execution, and closure.", url: "https://id-preview--a9e2a796-524e-4bb6-b857-cf385a33883d.lovable.app/", icon: ClipboardCheck },
-        { title: "CAPA", description: "Manages corrective/preventive actions with workflows.", url: "https://preview--soapbox-capa-flow.lovable.app/", icon: FileCheck },
+        { title: "CAPA", description: "Manages corrective/preventive actions with workflows.", url: "https://id-preview--5ae42494-757e-4a9c-ae10-928805921e1e.lovable.app/dashboard", icon: FileCheck },
         { title: "Risk Management", description: "Identifies, assesses, and mitigates organizational risks.", url: "https://preview--random-page.lovable.app/", icon: Shield },
         { title: "Compliance Management", description: "Monitors compliance with regulations.", url: "https://preview--compliance-orb.lovable.app/", icon: CheckSquare },
         { title: "Non-Compliance Reporting", description: "Track non-compliance events with corrective actions.", url: "https://id-preview--6223ccbc-ecf4-42dd-8762-474380de042e.lovable.app/", icon: FileWarning },
