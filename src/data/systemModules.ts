@@ -145,7 +145,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "ESG Strategy, Governance & Operating Model", description: "ESG strategy and governance framework.", icon: Building, url: "https://id-preview--584b29ca-2720-4f3f-a525-f9a697786467.lovable.app/" },
         { title: "ESG Reporting, Disclosure & Narrative Management", description: "ESG disclosure and reporting.", icon: FileSpreadsheet, url: "https://id-preview--d2b9ef1c-9de7-4ff6-8058-f1771dd4e305.lovable.app/" },
         { title: "GHG Emissions Management", description: "Greenhouse gas management.", icon: Wind, url: "https://id-preview--5ac191a2-0eb3-4bd9-8a83-6bbad223d043.lovable.app/dashboard" },
-        { title: "Environmental Data Management", description: "Environmental data ingestion and management.", icon: Database, url: "https://id-preview--3c453028-607e-4a2f-8480-ca21da5ca288.lovable.app/" },
+        { title: "ESG Data & Integration Layer", description: "Environmental data ingestion and management.", icon: Database, url: "https://id-preview--61db72d3-62be-423e-b8a9-d60a70ea02a5.lovable.app/" },
         { title: "Sustainability KPIs", description: "Sustainability KPI library.", icon: Gauge, comingSoon: true },
         { title: "Materiality Assessment", description: "Stakeholder mapping.", icon: Users, comingSoon: true },
         { title: "Supply Chain ESG", description: "Supply chain assessments.", icon: Truck, comingSoon: true },
