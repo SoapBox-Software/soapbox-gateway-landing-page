@@ -152,7 +152,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Supply Chain / Supplier Assessments", description: "Supply chain assessments.", icon: Truck, url: "https://id-preview--9cdc2043-0d15-4b09-942e-e44633da726f.lovable.app/" },
         { title: "Social Impact", description: "Human rights management.", icon: Heart, comingSoon: true },
         { title: "Targets & Roadmaps", description: "Sustainability roadmaps.", icon: Map, comingSoon: true },
-        { title: "Carbon Accounting", description: "Carbon offsets tracking.", icon: Leaf, comingSoon: true },
+        { title: "Carbon Accounting & Offsets", description: "Carbon offsets tracking.", icon: Leaf, url: "https://id-preview--c3e56a43-a199-43c7-a6ac-ddad26705e8f.lovable.app/" },
         { title: "Data Quality", description: "Data quality assurance.", icon: BadgeCheck, comingSoon: true },
         { title: "Climate Risk", description: "Scenario analysis.", icon: Thermometer, comingSoon: true },
         { title: "Investment ESG Scoring", description: "ESG investment scoring.", icon: TrendingUp, comingSoon: true },
