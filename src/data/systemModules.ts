@@ -147,6 +147,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "GHG Emissions Management", description: "Greenhouse gas management.", icon: Wind, url: "https://id-preview--5ac191a2-0eb3-4bd9-8a83-6bbad223d043.lovable.app/dashboard" },
         { title: "ESG Data & Integration Layer", description: "Environmental data ingestion and management.", icon: Database, url: "https://id-preview--61db72d3-62be-423e-b8a9-d60a70ea02a5.lovable.app/" },
         { title: "ESG Performance Management & KPI Framework", description: "ESG performance tracking and KPI management.", icon: Gauge, url: "https://id-preview--2974bfd0-f073-481d-8aa5-fb6726d1173f.lovable.app/" },
+        { title: "Energy & Resource Management", description: "Energy and resource management.", icon: Zap, url: "https://id-preview--55def650-0082-4d52-8fa2-3a3a02c17103.lovable.app/" },
         { title: "Sustainability KPIs", description: "Sustainability KPI library.", icon: Gauge, comingSoon: true },
         { title: "Materiality Assessment", description: "Stakeholder mapping.", icon: Users, comingSoon: true },
         { title: "Supply Chain / Supplier Assessments", description: "Supply chain assessments.", icon: Truck, url: "https://id-preview--9cdc2043-0d15-4b09-942e-e44633da726f.lovable.app/" },
