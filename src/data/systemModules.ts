@@ -151,7 +151,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Sustainability KPIs", description: "Sustainability KPI library.", icon: Gauge, comingSoon: true },
         { title: "Materiality Assessment", description: "Stakeholder mapping.", icon: Users, comingSoon: true },
         { title: "Supply Chain / Supplier Assessments", description: "Supply chain assessments.", icon: Truck, url: "https://id-preview--9cdc2043-0d15-4b09-942e-e44633da726f.lovable.app/" },
-        { title: "Social Impact", description: "Human rights management.", icon: Heart, comingSoon: true },
+        { title: "Social Labour, Impact & Human Rights", description: "Human rights management.", icon: Heart, url: "https://id-preview--e8dc9ed8-ebf8-4193-9efb-0061889b0215.lovable.app/" },
         { title: "Targets & Roadmaps", description: "Sustainability roadmaps.", icon: Map, comingSoon: true },
         { title: "Carbon Accounting & Offsets", description: "Carbon offsets tracking.", icon: Leaf, url: "https://id-preview--c3e56a43-a199-43c7-a6ac-ddad26705e8f.lovable.app/" },
         { title: "Data Quality", description: "Data quality assurance.", icon: BadgeCheck, comingSoon: true },
