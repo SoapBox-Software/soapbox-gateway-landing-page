@@ -149,7 +149,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "ESG Performance Management & KPI Framework", description: "ESG performance tracking and KPI management.", icon: Gauge, url: "https://id-preview--2974bfd0-f073-481d-8aa5-fb6726d1173f.lovable.app/" },
         { title: "Energy & Resource Management", description: "Energy and resource management.", icon: Zap, url: "https://id-preview--55def650-0082-4d52-8fa2-3a3a02c17103.lovable.app/" },
         { title: "Sustainability KPIs", description: "Sustainability KPI library.", icon: Gauge, comingSoon: true },
-        { title: "Materiality Assessment", description: "Stakeholder mapping.", icon: Users, comingSoon: true },
+        { title: "Materiality Assessment, Double Materiality & Stakeholder Mapping", description: "Stakeholder mapping.", icon: Users, url: "https://id-preview--adb6d145-e9aa-424e-8b8b-44636a8f3450.lovable.app/" },
         { title: "Supply Chain / Supplier Assessments", description: "Supply chain assessments.", icon: Truck, url: "https://id-preview--9cdc2043-0d15-4b09-942e-e44633da726f.lovable.app/" },
         { title: "Social Labour, Impact & Human Rights", description: "Human rights management.", icon: Heart, url: "https://id-preview--e8dc9ed8-ebf8-4193-9efb-0061889b0215.lovable.app/" },
         { title: "Targets & Roadmaps", description: "Sustainability roadmaps.", icon: Map, comingSoon: true },
