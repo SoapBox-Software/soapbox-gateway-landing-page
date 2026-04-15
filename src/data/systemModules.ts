@@ -157,6 +157,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Data Quality", description: "Data quality assurance.", icon: BadgeCheck, comingSoon: true },
         { title: "Climate Risk", description: "Scenario analysis.", icon: Thermometer, comingSoon: true },
         { title: "Investment ESG Scoring", description: "ESG investment scoring.", icon: TrendingUp, comingSoon: true },
+        { title: "Risk Opportunity Management & Scenario Analysis", description: "Risk opportunity management and scenario analysis.", icon: Target, url: "https://id-preview--07d04fe0-1dc2-472e-a775-014bc25d111c.lovable.app/" },
         { title: "Sustainability Tracker", description: "Task and action tracker.", icon: ListChecks, comingSoon: true },
       ]
     },
