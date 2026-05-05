@@ -60,7 +60,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
     {
       title: "Additional Advanced Modules",
       modules: [
-        { title: "Advanced Incident Management", description: "Enhanced tracking with AI-powered insights.", icon: AlertCircle, comingSoon: true },
+        { title: "Advanced Incident Management", description: "Enhanced tracking with AI-powered insights.", icon: AlertCircle, url: "https://id-preview--2f43c967-63f4-4f14-aeac-480abd1772e6.lovable.app/" },
         { title: "Advanced Risk Management", description: "Predictive risk analytics and modeling.", icon: Target, comingSoon: true },
         { title: "Advanced Compliance", description: "AI-driven compliance monitoring.", icon: CheckSquare, comingSoon: true },
         { title: "Change Management", description: "Manage changes with impact assessments.", url: "https://id-preview--736491cb-a76c-4cd6-94fc-085c7c60cfe5.lovable.app/", icon: RefreshCw },
