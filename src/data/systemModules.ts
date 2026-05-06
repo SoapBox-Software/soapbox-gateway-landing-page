@@ -61,7 +61,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       title: "Additional Advanced Modules",
       modules: [
         { title: "Advanced Incident Management", description: "Enhanced tracking with AI-powered insights.", icon: AlertCircle, url: "https://id-preview--2f43c967-63f4-4f14-aeac-480abd1772e6.lovable.app/" },
-        { title: "Advanced Risk Management", description: "Predictive risk analytics and modeling.", icon: Target, comingSoon: true },
+        { title: "Advanced Risk Management", description: "Predictive risk analytics and modeling.", icon: Target, url: "https://id-preview--aa830949-055e-4a47-95e6-9efe15c69314.lovable.app/" },
         { title: "Advanced Compliance Management", description: "AI-driven compliance monitoring.", icon: CheckSquare, url: "https://id-preview--e11d99d6-e27e-48b4-8bb7-8e9800781e1d.lovable.app/" },
         { title: "Change Management", description: "Manage changes with impact assessments.", url: "https://id-preview--736491cb-a76c-4cd6-94fc-085c7c60cfe5.lovable.app/", icon: RefreshCw },
         { title: "Training Management", description: "Schedule and certify training programs.", url: "https://id-preview--63ac40ad-200e-4d94-8c37-124cfbdd6334.lovable.app/", icon: GraduationCap },
