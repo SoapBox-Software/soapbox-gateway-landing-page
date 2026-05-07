@@ -67,7 +67,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Training Management", description: "Schedule and certify training programs.", url: "https://id-preview--63ac40ad-200e-4d94-8c37-124cfbdd6334.lovable.app/", icon: GraduationCap },
         { title: "Document Management", description: "Centralized EHS documents and version control.", url: "https://id-preview--42fa2e52-fd78-40e1-b451-be0a881c8195.lovable.app/", icon: FolderOpen },
         { title: "Checklists Management", description: "Create and track safety checklists.", url: "https://id-preview--e447bfce-0b7f-4ec6-b539-02a40d86875c.lovable.app/", icon: ListChecks },
-        { title: "Advanced Predictive Analytics", description: "AI-powered predictive analytics.", icon: TrendingUp, comingSoon: true },
+        { title: "Advanced Predictive Analytics", description: "AI-powered predictive analytics.", icon: TrendingUp, url: "https://id-preview--53b08954-9e88-4792-8c29-9df8b4e997e9.lovable.app/" },
         { title: "Artificial Intelligence Module", description: "AI module for automation.", icon: Brain, comingSoon: true },
         { title: "BCM", description: "Business continuity management.", icon: Building2, comingSoon: true },
         { title: "Emergency Management", description: "Emergency response and planning.", icon: Siren, url: "https://id-preview--c85647ec-95ea-4934-9b06-c8f2d35df228.lovable.app/" },
