@@ -69,7 +69,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Checklists Management", description: "Create and track safety checklists.", url: "https://id-preview--e447bfce-0b7f-4ec6-b539-02a40d86875c.lovable.app/", icon: ListChecks },
         { title: "Advanced Predictive Analytics", description: "AI-powered predictive analytics.", icon: TrendingUp, url: "https://id-preview--53b08954-9e88-4792-8c29-9df8b4e997e9.lovable.app/" },
         { title: "Artificial Intelligence Module", description: "AI module for automation.", icon: Brain, url: "https://id-preview--a482f6e9-c4e9-47e6-b90f-ebeece99b6f6.lovable.app/" },
-        { title: "BCM", description: "Business continuity management.", icon: Building2, comingSoon: true },
+        { title: "Business Continuity Management", description: "Business continuity management.", icon: Building2, url: "https://id-preview--b39a099a-8807-4812-9199-7970a57b3db0.lovable.app/" },
         { title: "Emergency Management", description: "Emergency response and planning.", icon: Siren, url: "https://id-preview--c85647ec-95ea-4934-9b06-c8f2d35df228.lovable.app/" },
         { title: "Operational Sustainability", description: "Sustainability tracking and reporting.", icon: Leaf, url: "https://id-preview--9ce71eee-3d3b-44a7-adf2-0412767bd887.lovable.app/" },
         { title: "Legal & Regulatory Change", description: "Monitor regulatory changes.", icon: Scale, comingSoon: true },
