@@ -72,7 +72,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Business Continuity Management", description: "Business continuity management.", icon: Building2, url: "https://id-preview--b39a099a-8807-4812-9199-7970a57b3db0.lovable.app/" },
         { title: "Emergency Management", description: "Emergency response and planning.", icon: Siren, url: "https://id-preview--c85647ec-95ea-4934-9b06-c8f2d35df228.lovable.app/" },
         { title: "Operational Sustainability", description: "Sustainability tracking and reporting.", icon: Leaf, url: "https://id-preview--9ce71eee-3d3b-44a7-adf2-0412767bd887.lovable.app/" },
-        { title: "Legal & Regulatory Change", description: "Monitor regulatory changes.", icon: Scale, comingSoon: true },
+        { title: "Legal & Regulatory Change", description: "Monitor regulatory changes.", icon: Scale, url: "https://id-preview--c363c06c-7726-4a0e-ab4e-40e75fd70a96.lovable.app/" },
         { title: "Environmental Data", description: "Environmental data management.", icon: Database, url: "https://id-preview--3c453028-607e-4a2f-8480-ca21da5ca288.lovable.app/" },
         { title: "Contractor & Supplier", description: "Contractor and supplier management.", icon: Truck, comingSoon: true },
         { title: "Employee Wellbeing", description: "Wellbeing and mental health tracking.", icon: Heart, comingSoon: true },
