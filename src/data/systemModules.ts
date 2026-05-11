@@ -74,7 +74,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Operational Sustainability", description: "Sustainability tracking and reporting.", icon: Leaf, url: "https://id-preview--9ce71eee-3d3b-44a7-adf2-0412767bd887.lovable.app/" },
         { title: "Legal & Regulatory Change", description: "Monitor regulatory changes.", icon: Scale, url: "https://id-preview--c363c06c-7726-4a0e-ab4e-40e75fd70a96.lovable.app/" },
         { title: "Environmental Data", description: "Environmental data management.", icon: Database, url: "https://id-preview--3c453028-607e-4a2f-8480-ca21da5ca288.lovable.app/" },
-        { title: "Contractor & Supplier", description: "Contractor and supplier management.", icon: Truck, comingSoon: true },
+        { title: "Contractor & Supplier Management", description: "Contractor and supplier management.", icon: Truck, url: "https://id-preview--c2eee24e-8ea8-40df-a49c-17b0baa59933.lovable.app/" },
         { title: "Employee Wellbeing", description: "Wellbeing and mental health tracking.", icon: Heart, comingSoon: true },
         { title: "Ergonomics Assessment", description: "Ergonomics evaluation tools.", icon: Activity, url: "https://id-preview--04b74b84-4fd7-464d-9bf0-b4268941f7e7.lovable.app/" },
       ]
