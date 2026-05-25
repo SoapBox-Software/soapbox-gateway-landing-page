@@ -66,7 +66,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Change Management", description: "Manage changes with impact assessments.", url: "https://id-preview--736491cb-a76c-4cd6-94fc-085c7c60cfe5.lovable.app/", icon: RefreshCw },
         { title: "Training Management", description: "Schedule and certify training programs.", url: "https://id-preview--63ac40ad-200e-4d94-8c37-124cfbdd6334.lovable.app/", icon: GraduationCap },
         { title: "Document Management", description: "Centralized EHS documents and version control.", url: "https://id-preview--42fa2e52-fd78-40e1-b451-be0a881c8195.lovable.app/", icon: FolderOpen },
-        { title: "Checklists Management", description: "Create and track safety checklists.", url: "https://id-preview--e447bfce-0b7f-4ec6-b539-02a40d86875c.lovable.app/", icon: ListChecks },
+        { title: "Checklists Management", description: "Create and track safety checklists.", url: "https://id-preview--6bde023c-f913-4c2f-98f8-0201045897c7.lovable.app/", icon: ListChecks },
         { title: "Advanced Predictive Analytics", description: "AI-powered predictive analytics.", icon: TrendingUp, url: "https://id-preview--53b08954-9e88-4792-8c29-9df8b4e997e9.lovable.app/" },
         { title: "Artificial Intelligence Module", description: "AI module for automation.", icon: Brain, url: "https://id-preview--a482f6e9-c4e9-47e6-b90f-ebeece99b6f6.lovable.app/" },
         { title: "Business Continuity Management", description: "Business continuity management.", icon: Building2, url: "https://id-preview--b39a099a-8807-4812-9199-7970a57b3db0.lovable.app/" },
