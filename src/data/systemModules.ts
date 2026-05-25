@@ -58,6 +58,15 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       ]
     },
     {
+      title: "Cross-Engine Modules",
+      modules: [
+        { title: "Tenant Administration", description: "Multi-tenant administration and configuration.", icon: Building2 },
+        { title: "RCA Engine", description: "Root cause analysis and investigation engine.", icon: FileSearch },
+        { title: "Escalation Engine", description: "Automated escalation and alert routing.", icon: Zap },
+        { title: "Notification Engine", description: "Multi-channel notification and communication.", icon: Megaphone },
+      ]
+    },
+    {
       title: "Additional Advanced Modules",
       modules: [
         { title: "Advanced Incident Management", description: "Enhanced tracking with AI-powered insights.", icon: AlertCircle, url: "https://id-preview--2f43c967-63f4-4f14-aeac-480abd1772e6.lovable.app/" },
