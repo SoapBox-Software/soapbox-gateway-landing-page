@@ -60,7 +60,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
     {
       title: "Cross-Engine Modules",
       modules: [
-        { title: "Tenant Administration", description: "Multi-tenant administration and configuration.", icon: Building2 },
+        { title: "Tenant Administration", description: "Multi-tenant administration and configuration.", url: "https://id-preview--5ae9ad03-2758-492b-bef6-eea5616469b1.lovable.app/", icon: Building2 },
         { title: "RCA Engine", description: "Root cause analysis and investigation engine.", url: "https://id-preview--82c936f6-a6f5-41bc-b7dd-46d938a2c8d1.lovable.app/", icon: FileSearch },
         { title: "Escalation Engine", description: "Automated escalation and alert routing.", icon: Zap },
         { title: "Notification Engine", description: "Multi-channel notification and communication.", icon: Megaphone },
