@@ -42,7 +42,8 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Inspection", description: "Digital inspection forms and automated workflows.", url: "https://preview--soapbox-inspect-iq.lovable.app/help", icon: Search },
         { title: "Job Safety Analysis (JSA)", description: "Systematic evaluation of job tasks and safety.", url: "https://id-preview--2c806b9c-2226-4ae7-b27f-1bd7b4067456.lovable.app/", icon: ClipboardList },
         { title: "Safety Observation Reporting", description: "Report and track safety observations.", url: "https://id-preview--028c806b-042b-48fa-a108-cb742fe05d07.lovable.app/", icon: Eye },
-        { title: "Occupational Health", description: "Health monitoring and management.", url: "https://id-preview--0d475589-e0d6-4ae7-a555-0ac8b22b24bb.lovable.app/", icon: Stethoscope },
+        { title: "Near Miss Reporting", description: "Capture near-miss incidents to prevent accidents.", url: "https://id-preview--290a6b11-cd72-4c91-982a-d65938091ff8.lovable.app/", icon: TriangleAlert },
+        { title: "Permit to Work (PTW)", description: "Digital permit system for high-risk work.", url: "https://id-preview--81b969a2-0de7-4940-9300-5e7255ea671a.lovable.app/", icon: FileText },
       ]
     },
     {
@@ -50,20 +51,30 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       modules: [
         { title: "HAZMAT", description: "Track and control hazardous substances.", url: "https://id-preview--e109f455-540d-4502-9bff-878a1238071c.lovable.app/", icon: Skull },
         { title: "Hot Work Permits", description: "Manage permits for welding and hot work.", url: "https://id-preview--b569da81-3986-4487-aa6c-d204c7ec2c65.lovable.app/", icon: Flame },
-        { title: "Permit to Work (PTW)", description: "Digital permit system for high-risk work.", url: "https://id-preview--81b969a2-0de7-4940-9300-5e7255ea671a.lovable.app/", icon: FileText },
-        { title: "Near Miss Reporting", description: "Capture near-miss incidents to prevent accidents.", url: "https://id-preview--290a6b11-cd72-4c91-982a-d65938091ff8.lovable.app/", icon: TriangleAlert },
         { title: "Event Tracking", description: "Tracks planned/unplanned events and analytics.", url: "https://id-preview--66a6c22a-9185-4f11-bc75-6f851488f8e7.lovable.app/", icon: Calendar },
         { title: "Operational Risk Management", description: "Real-time operational risk monitoring.", url: "https://id-preview--ca0a2037-70be-45ec-a950-794182b91fd6.lovable.app/", icon: Briefcase },
         { title: "Waste Management", description: "Monitor waste disposal and recycling.", url: "https://id-preview--b644d756-cb90-4b28-9324-4d6ec0c81c99.lovable.app/", icon: Trash2 },
+        { title: "Occupational Health", description: "Health monitoring and management.", url: "https://id-preview--0d475589-e0d6-4ae7-a555-0ac8b22b24bb.lovable.app/", icon: Stethoscope },
       ]
     },
     {
-      title: "Cross-Engine Modules",
+      title: "Shared Engine Modules",
       modules: [
         { title: "Tenant Administration", description: "Multi-tenant administration and configuration.", url: "https://id-preview--5ae9ad03-2758-492b-bef6-eea5616469b1.lovable.app/", icon: Building2 },
         { title: "RCA Engine", description: "Root cause analysis and investigation engine.", url: "https://id-preview--82c936f6-a6f5-41bc-b7dd-46d938a2c8d1.lovable.app/", icon: FileSearch },
         { title: "Escalation Engine", description: "Automated escalation and alert routing.", icon: Zap },
         { title: "Notification Engine", description: "Multi-channel notification and communication.", icon: Megaphone },
+        { title: "SLA Engine", description: "Service-level agreement tracking and enforcement.", icon: Timer },
+      ]
+    },
+    {
+      title: "Artificial Intelligence Services",
+      modules: [
+        { title: "AI Assistance", description: "Conversational AI assistance across modules.", icon: Bot },
+        { title: "Predictive AI", description: "Predictive insights and forecasting models.", icon: TrendingUp },
+        { title: "Workflow Intelligence", description: "Intelligent workflow automation and optimization.", icon: Workflow },
+        { title: "Advanced AI OPS", description: "AI-driven operations and observability.", icon: Cpu },
+        { title: "AI-Cross Module Agents", description: "Cross-module AI agents for orchestrated tasks.", icon: Network },
       ]
     },
     {
@@ -77,7 +88,6 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Document Management", description: "Centralized EHS documents and version control.", url: "https://id-preview--42fa2e52-fd78-40e1-b451-be0a881c8195.lovable.app/", icon: FolderOpen },
         { title: "Checklists Management", description: "Create and track safety checklists.", url: "https://id-preview--6bde023c-f913-4c2f-98f8-0201045897c7.lovable.app/", icon: ListChecks },
         { title: "Advanced Predictive Analytics", description: "AI-powered predictive analytics.", icon: TrendingUp, url: "https://id-preview--53b08954-9e88-4792-8c29-9df8b4e997e9.lovable.app/" },
-        { title: "Artificial Intelligence Module", description: "AI module for automation.", icon: Brain, url: "https://id-preview--a482f6e9-c4e9-47e6-b90f-ebeece99b6f6.lovable.app/" },
         { title: "Business Continuity Management", description: "Business continuity management.", icon: Building2, url: "https://id-preview--b39a099a-8807-4812-9199-7970a57b3db0.lovable.app/" },
         { title: "Emergency Management", description: "Emergency response and planning.", icon: Siren, url: "https://id-preview--c85647ec-95ea-4934-9b06-c8f2d35df228.lovable.app/" },
         { title: "Operational Sustainability", description: "Sustainability tracking and reporting.", icon: Leaf, url: "https://id-preview--9ce71eee-3d3b-44a7-adf2-0412767bd887.lovable.app/" },
