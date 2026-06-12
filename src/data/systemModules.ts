@@ -99,6 +99,30 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       ]
     }
   ],
+  "Asset Management": [
+    {
+      title: "Asset Management Modules",
+      modules: [
+        { title: "Foundation & Master Data Modules", description: "Asset registry, hierarchies, taxonomies, and master data.", icon: Database, comingSoon: true },
+        { title: "Asset Lifecycle Management Modules", description: "Manage assets from acquisition through disposal.", icon: RefreshCw, comingSoon: true },
+        { title: "Asset Criticality, Risk & Integrity Modules", description: "Criticality ranking, risk-based integrity management.", icon: Shield, comingSoon: true },
+        { title: "Maintenance Management / CMMS Modules", description: "Preventive, predictive, and corrective maintenance.", icon: Wrench, comingSoon: true },
+        { title: "Inspection, Testing & Certification Modules", description: "Inspections, NDT, testing and certification workflows.", icon: Search, comingSoon: true },
+        { title: "Calibration & Metrology Modules", description: "Calibration schedules, traceability, and metrology.", icon: Gauge, comingSoon: true },
+        { title: "Spare Parts, Inventory & Materials Modules", description: "Spare parts, MRO inventory, and materials management.", icon: Package, comingSoon: true },
+        { title: "Asset Documents, Drawings & Records Modules", description: "Drawings, manuals, and asset record management.", icon: FolderOpen, comingSoon: true },
+        { title: "Asset Compliance & Regulatory Modules", description: "Asset-related regulatory compliance and reporting.", icon: CheckSquare, comingSoon: true },
+        { title: "Asset Safety & EHS Integration Modules", description: "Integrate asset operations with EHS controls.", icon: ShieldCheck, comingSoon: true },
+        { title: "Asset Performance, Reliability & Analytics Modules", description: "KPIs, reliability engineering, and performance analytics.", icon: BarChart3, comingSoon: true },
+        { title: "Facilities, Utilities & Infrastructure Modules", description: "Facilities, utilities, and infrastructure management.", icon: Building2, comingSoon: true },
+        { title: "ESG, Sustainability & Environmental Asset Modules", description: "Sustainability and environmental impact of assets.", icon: Leaf, comingSoon: true },
+        { title: "Financial, Procurement & Contract Modules", description: "Asset finance, procurement, and contract management.", icon: DollarSign, comingSoon: true },
+        { title: "Mobile, Field & Offline Modules", description: "Mobile and offline field operations for assets.", icon: Smartphone, comingSoon: true },
+        { title: "Asset Governance, Strategy & ISO 55001 Modules", description: "Strategic asset management aligned to ISO 55001.", icon: Compass, comingSoon: true },
+        { title: "Administration & Configuration Modules", description: "Administration, configuration, and platform settings.", icon: Settings, comingSoon: true },
+      ]
+    }
+  ],
   "Sustainability": [
     {
       title: "Sustainability Modules",
