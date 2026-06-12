@@ -99,9 +99,9 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       ]
     }
   ],
-  "Asset Management Module": [
+  "Asset Management": [
     {
-      title: "Asset Management Module",
+      title: "Asset Management",
       modules: [
         { title: "Foundation & Master Data", description: "Asset registry, hierarchies, taxonomies, and master data.", icon: Database, comingSoon: true },
         { title: "Asset Lifecycle Management", description: "Manage assets from acquisition through disposal.", icon: RefreshCw, comingSoon: true },
