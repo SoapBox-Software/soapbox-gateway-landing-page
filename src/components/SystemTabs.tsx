@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export type SystemType = 
   | "EHS" 
-  | "Asset Management Module"
+  | "Asset Management"
   | "Sustainability"
   | "eQMS" 
   | "ESG"
@@ -23,7 +23,7 @@ interface SystemTabsProps {
 
 const systems: SystemType[] = [
   "EHS",
-  "Asset Management Module",
+  "Asset Management",
   "Sustainability",
   "eQMS",
   "ESG",
@@ -38,7 +38,7 @@ const systems: SystemType[] = [
 
 const systemDescriptions: Record<SystemType, string> = {
   "EHS": "Comprehensive tools to manage environmental, health, and safety operations.",
-  "Asset Management Module": "End-to-end asset lifecycle, maintenance, reliability, and ISO 55001-aligned governance.",
+  "Asset Management": "End-to-end asset lifecycle, maintenance, reliability, and ISO 55001-aligned governance.",
   "Sustainability": "End-to-end sustainability management — from strategy and governance to reporting and assurance.",
   "eQMS": "Digitized, audit-ready quality management powered by intelligent workflows.",
   "ESG": "Enterprise sustainability, carbon accounting, and regulatory disclosure management.",
