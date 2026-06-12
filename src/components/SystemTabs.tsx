@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export type SystemType = 
   | "EHS" 
+  | "Asset Management"
   | "Sustainability"
   | "eQMS" 
   | "ESG"
@@ -22,6 +23,7 @@ interface SystemTabsProps {
 
 const systems: SystemType[] = [
   "EHS",
+  "Asset Management",
   "Sustainability",
   "eQMS",
   "ESG",
