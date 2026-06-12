@@ -38,6 +38,7 @@ const systems: SystemType[] = [
 
 const systemDescriptions: Record<SystemType, string> = {
   "EHS": "Comprehensive tools to manage environmental, health, and safety operations.",
+  "Asset Management": "End-to-end asset lifecycle, maintenance, reliability, and ISO 55001-aligned governance.",
   "Sustainability": "End-to-end sustainability management — from strategy and governance to reporting and assurance.",
   "eQMS": "Digitized, audit-ready quality management powered by intelligent workflows.",
   "ESG": "Enterprise sustainability, carbon accounting, and regulatory disclosure management.",
