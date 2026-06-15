@@ -103,7 +103,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
     {
       title: "Asset Management",
       modules: [
-        { title: "Foundation & Master Data", description: "Asset registry, hierarchies, taxonomies, and master data.", icon: Database, comingSoon: true },
+        { title: "Foundation & Master Data", description: "Asset registry, hierarchies, taxonomies, and master data.", url: "https://id-preview--c6deb23e-e1b8-4824-8625-777116cbebfe.lovable.app/", icon: Database },
         { title: "Asset Lifecycle Management", description: "Manage assets from acquisition through disposal.", icon: RefreshCw, comingSoon: true },
         { title: "Asset Criticality, Risk & Integrity", description: "Criticality ranking, risk-based integrity management.", icon: Shield, comingSoon: true },
         { title: "Maintenance Management / CMMS", description: "Preventive, predictive, and corrective maintenance.", icon: Wrench, comingSoon: true },
