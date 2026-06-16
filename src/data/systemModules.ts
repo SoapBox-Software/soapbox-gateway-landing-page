@@ -33,6 +33,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       title: "Core EHS Engine",
       modules: [
         { title: "Executive Console", description: "Executive dashboard for EHS oversight and analytics.", url: "https://id-preview--38c13a74-b9a0-45c9-abc2-fedb2007ce07.lovable.app/", icon: LayoutDashboard },
+        { title: "Event Tracking", description: "Tracks planned/unplanned events and analytics.", url: "https://id-preview--66a6c22a-9185-4f11-bc75-6f851488f8e7.lovable.app/", icon: Calendar },
         { title: "Incident Management", description: "Reports, tracks, investigates, and closes incidents with SLAs.", url: "https://preview--ops-resolve-dash.lovable.app/dashboard", icon: AlertTriangle },
         { title: "Audit Management", description: "Streamlines audit planning, execution, and closure.", url: "https://id-preview--a9e2a796-524e-4bb6-b857-cf385a33883d.lovable.app/", icon: ClipboardCheck },
         { title: "CAPA", description: "Manages corrective/preventive actions with workflows.", url: "https://id-preview--5ae42494-757e-4a9c-ae10-928805921e1e.lovable.app/dashboard", icon: FileCheck },
@@ -51,7 +52,6 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       modules: [
         { title: "HAZMAT", description: "Track and control hazardous substances.", url: "https://id-preview--e109f455-540d-4502-9bff-878a1238071c.lovable.app/", icon: Skull },
         { title: "Hot Work Permits", description: "Manage permits for welding and hot work.", url: "https://id-preview--b569da81-3986-4487-aa6c-d204c7ec2c65.lovable.app/", icon: Flame },
-        { title: "Event Tracking", description: "Tracks planned/unplanned events and analytics.", url: "https://id-preview--66a6c22a-9185-4f11-bc75-6f851488f8e7.lovable.app/", icon: Calendar },
         { title: "Operational Risk Management", description: "Real-time operational risk monitoring.", url: "https://id-preview--ca0a2037-70be-45ec-a950-794182b91fd6.lovable.app/", icon: Briefcase },
         { title: "Waste Management", description: "Monitor waste disposal and recycling.", url: "https://id-preview--b644d756-cb90-4b28-9324-4d6ec0c81c99.lovable.app/", icon: Trash2 },
         { title: "Occupational Health", description: "Health monitoring and management.", url: "https://id-preview--0d475589-e0d6-4ae7-a555-0ac8b22b24bb.lovable.app/", icon: Stethoscope },
