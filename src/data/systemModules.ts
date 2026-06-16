@@ -68,16 +68,6 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       ]
     },
     {
-      title: "Artificial Intelligence Services",
-      modules: [
-        { title: "AI Assistance", description: "Conversational AI assistance across modules.", icon: Bot },
-        { title: "Predictive AI", description: "Predictive insights and forecasting models.", icon: TrendingUp },
-        { title: "Workflow Intelligence", description: "Intelligent workflow automation and optimization.", icon: Workflow },
-        { title: "Advanced AI OPS", description: "AI-driven operations and observability.", icon: Cpu },
-        { title: "AI-Cross Module Agents", description: "Cross-module AI agents for orchestrated tasks.", icon: Network },
-      ]
-    },
-    {
       title: "Additional Advanced Modules",
       modules: [
         { title: "Advanced Incident Management", description: "Enhanced tracking with AI-powered insights.", icon: AlertCircle, url: "https://id-preview--2f43c967-63f4-4f14-aeac-480abd1772e6.lovable.app/" },
@@ -96,6 +86,16 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Contractor & Supplier Management", description: "Contractor and supplier management.", icon: Truck, url: "https://id-preview--c2eee24e-8ea8-40df-a49c-17b0baa59933.lovable.app/" },
         { title: "Employee Wellbeing", description: "Wellbeing and mental health tracking.", icon: Heart, url: "https://id-preview--204bbe19-de83-4601-82b3-91c760099b91.lovable.app/" },
         { title: "Ergonomics Assessment", description: "Ergonomics evaluation tools.", icon: Activity, url: "https://id-preview--04b74b84-4fd7-464d-9bf0-b4268941f7e7.lovable.app/" },
+      ]
+    },
+    {
+      title: "Artificial Intelligence Services",
+      modules: [
+        { title: "AI Assistance", description: "Conversational AI assistance across modules.", icon: Bot },
+        { title: "Predictive AI", description: "Predictive insights and forecasting models.", icon: TrendingUp },
+        { title: "Workflow Intelligence", description: "Intelligent workflow automation and optimization.", icon: Workflow },
+        { title: "Advanced AI OPS", description: "AI-driven operations and observability.", icon: Cpu },
+        { title: "AI-Cross Module Agents", description: "Cross-module AI agents for orchestrated tasks.", icon: Network },
       ]
     }
   ],
