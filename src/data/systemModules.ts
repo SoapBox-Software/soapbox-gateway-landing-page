@@ -111,7 +111,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Calibration & Metrology", description: "Calibration schedules, traceability, and metrology.", url: "https://id-preview--1b19f88f-9797-4ba7-b6c2-8d05a021c1c6.lovable.app/", icon: Gauge },
         { title: "Spare Parts, Inventory & Materials", description: "Spare parts, MRO inventory, and materials management.", url: "https://id-preview--1139b243-2165-4fe9-8913-2d6b3d26b3f1.lovable.app/", icon: Package },
         { title: "Asset Documents, Drawings & Records", description: "Drawings, manuals, and asset record management.", url: "https://id-preview--cdaea5dc-d548-41c9-b429-b4f9cc26a139.lovable.app/", icon: FolderOpen },
-        { title: "Asset Compliance & Regulatory", description: "Asset-related regulatory compliance and reporting.", icon: CheckSquare, comingSoon: true },
+        { title: "Asset Compliance & Regulatory", description: "Asset-related regulatory compliance and reporting.", url: "https://id-preview--ad3636d5-d24f-4404-936d-d04b79efeb4f.lovable.app/", icon: CheckSquare },
         { title: "Asset Safety & EHS Integration", description: "Integrate asset operations with EHS controls.", icon: ShieldCheck, comingSoon: true },
         { title: "Asset Performance, Reliability & Analytics", description: "KPIs, reliability engineering, and performance analytics.", icon: BarChart3, comingSoon: true },
         { title: "Facilities, Utilities & Infrastructure", description: "Facilities, utilities, and infrastructure management.", icon: Building2, comingSoon: true },
