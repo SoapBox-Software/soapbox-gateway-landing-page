@@ -110,7 +110,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Inspection, Testing & Certification", description: "Inspections, NDT, testing and certification workflows.", url: "https://id-preview--6530acdd-a4e0-4314-9854-23e3972dff13.lovable.app/", icon: Search },
         { title: "Calibration & Metrology", description: "Calibration schedules, traceability, and metrology.", url: "https://id-preview--1b19f88f-9797-4ba7-b6c2-8d05a021c1c6.lovable.app/", icon: Gauge },
         { title: "Spare Parts, Inventory & Materials", description: "Spare parts, MRO inventory, and materials management.", url: "https://id-preview--1139b243-2165-4fe9-8913-2d6b3d26b3f1.lovable.app/", icon: Package },
-        { title: "Asset Documents, Drawings & Records", description: "Drawings, manuals, and asset record management.", icon: FolderOpen, comingSoon: true },
+        { title: "Asset Documents, Drawings & Records", description: "Drawings, manuals, and asset record management.", url: "https://id-preview--cdaea5dc-d548-41c9-b429-b4f9cc26a139.lovable.app/", icon: FolderOpen },
         { title: "Asset Compliance & Regulatory", description: "Asset-related regulatory compliance and reporting.", icon: CheckSquare, comingSoon: true },
         { title: "Asset Safety & EHS Integration", description: "Integrate asset operations with EHS controls.", icon: ShieldCheck, comingSoon: true },
         { title: "Asset Performance, Reliability & Analytics", description: "KPIs, reliability engineering, and performance analytics.", icon: BarChart3, comingSoon: true },
