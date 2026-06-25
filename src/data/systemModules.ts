@@ -115,7 +115,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Asset Safety & EHS Integration", description: "Integrate asset operations with EHS controls.", url: "https://id-preview--c91c3b37-1a3b-4e39-ac31-2395a371cb33.lovable.app/", icon: ShieldCheck },
         { title: "Asset Performance, Reliability & Analytics", description: "KPIs, reliability engineering, and performance analytics.", url: "https://id-preview--b5acdc25-76e5-464e-91b4-e0c231b4efae.lovable.app/", icon: BarChart3 },
         { title: "Facilities, Utilities & Infrastructure", description: "Facilities, utilities, and infrastructure management.", url: "https://id-preview--8be2b354-06ec-44c6-9e35-03dcbf37d60d.lovable.app/", icon: Building2 },
-        { title: "ESG, Sustainability & Environmental Asset", description: "Sustainability and environmental impact of assets.", icon: Leaf, comingSoon: true },
+        { title: "ESG, Sustainability & Environmental Asset", description: "Sustainability and environmental impact of assets.", url: "https://id-preview--9093ada0-542a-458b-b40c-175ed6c576e6.lovable.app/", icon: Leaf },
         { title: "Financial, Procurement & Contract", description: "Asset finance, procurement, and contract management.", icon: DollarSign, comingSoon: true },
         { title: "Mobile, Field & Offline", description: "Mobile and offline field operations for assets.", icon: Smartphone, comingSoon: true },
         { title: "Asset Governance, Strategy & ISO 55001", description: "Strategic asset management aligned to ISO 55001.", icon: Compass, comingSoon: true },
