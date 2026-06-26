@@ -116,7 +116,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Asset Performance, Reliability & Analytics", description: "KPIs, reliability engineering, and performance analytics.", url: "https://id-preview--b5acdc25-76e5-464e-91b4-e0c231b4efae.lovable.app/", icon: BarChart3 },
         { title: "Facilities, Utilities & Infrastructure", description: "Facilities, utilities, and infrastructure management.", url: "https://id-preview--8be2b354-06ec-44c6-9e35-03dcbf37d60d.lovable.app/", icon: Building2 },
         { title: "ESG, Sustainability & Environmental Asset", description: "Sustainability and environmental impact of assets.", url: "https://id-preview--9093ada0-542a-458b-b40c-175ed6c576e6.lovable.app/", icon: Leaf },
-        { title: "Financial, Procurement & Contract", description: "Asset finance, procurement, and contract management.", icon: DollarSign, comingSoon: true },
+        { title: "Financial, Procurement & Contract", description: "Asset finance, procurement, and contract management.", icon: DollarSign, url: "https://id-preview--da4c7fab-3569-457c-8177-0b38f664cc60.lovable.app/" },
         { title: "Mobile, Field & Offline", description: "Mobile and offline field operations for assets.", icon: Smartphone, comingSoon: true },
         { title: "Asset Governance, Strategy & ISO 55001", description: "Strategic asset management aligned to ISO 55001.", icon: Compass, comingSoon: true },
         { title: "Administration & Configuration", description: "Administration, configuration, and platform settings.", icon: Settings, comingSoon: true },
