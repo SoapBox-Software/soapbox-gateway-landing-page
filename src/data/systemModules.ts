@@ -127,7 +127,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
     {
       title: "Sustainability Modules",
       modules: [
-        { title: "Energy & Resource Management", description: "Monitor and optimize energy and resource consumption.", url: "https://id-preview--1f63954e-e9f6-46e9-99e0-1e004b9441de.lovable.app/", icon: Zap },
+        { title: "Energy & Resource Management", description: "Monitor and optimize energy and resource consumption.", url: "https://id-preview--55def650-0082-4d52-8fa2-3a3a02c17103.lovable.app/", icon: Zap },
         { title: "Environmental Footprint", description: "Track and reduce environmental footprint across operations.", url: "https://id-preview--e954506b-ebbd-4229-8fd1-225b114a0b34.lovable.app/", icon: Leaf },
         { title: "Materiality & Impact Assessment", description: "Identify and prioritize material sustainability topics.", url: "https://id-preview--907351d6-40f7-42e6-9e93-2595acb776c1.lovable.app/", icon: Target },
         { title: "Social & Workforce Sustainability", description: "Manage social impact and workforce sustainability programs.", url: "https://id-preview--16221266-68b8-4b65-89c8-c5501aaecf26.lovable.app/dashboard", icon: Users },
