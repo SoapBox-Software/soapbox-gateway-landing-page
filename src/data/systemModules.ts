@@ -55,6 +55,9 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Operational Risk Management", description: "Real-time operational risk monitoring.", url: "https://id-preview--ca0a2037-70be-45ec-a950-794182b91fd6.lovable.app/", icon: Briefcase },
         { title: "Waste Management", description: "Monitor waste disposal and recycling.", url: "https://id-preview--b644d756-cb90-4b28-9324-4d6ec0c81c99.lovable.app/", icon: Trash2 },
         { title: "Occupational Health", description: "Health monitoring and management.", url: "https://id-preview--0d475589-e0d6-4ae7-a555-0ac8b22b24bb.lovable.app/", icon: Stethoscope },
+        { title: "Air Emissions Management", description: "Track, report, and reduce air emissions.", url: "https://id-preview--7d5016d5-2991-4560-b0ab-86317ee42504.lovable.app/", icon: Wind },
+        { title: "Environmental Compliance", description: "Ensure environmental regulatory compliance.", url: "https://id-preview--248ce853-3e4b-4098-8b8d-c552f53e15b3.lovable.app/", icon: ShieldCheck },
+        { title: "Chemicals Management", description: "Manage chemical inventory, SDS, and usage.", url: "https://id-preview--077076b9-3c47-4970-9b39-66c7a27a47ca.lovable.app/", icon: TestTube },
       ]
     },
     {
