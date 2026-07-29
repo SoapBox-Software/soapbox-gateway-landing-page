@@ -96,7 +96,7 @@ const SystemTabs = ({ activeSystem, onSystemChange }: SystemTabsProps) => {
             <Button
               variant="ghost"
               size="icon"
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 shadow-md hover:bg-white"
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-10 h-8 w-8 bg-white/80 shadow-md hover:bg-white"
               onClick={() => scroll("left")}
             >
               <ChevronLeft className="h-4 w-4" />
