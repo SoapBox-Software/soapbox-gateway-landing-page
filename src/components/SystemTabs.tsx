@@ -91,57 +91,59 @@ const SystemTabs = ({ activeSystem, onSystemChange }: SystemTabsProps) => {
     <div className="py-6 px-6">
       <div className="container mx-auto">
         {/* Tabs with scroll */}
-        <div className="relative">
-          {canScrollLeft && (
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute left-3 top-1/2 -translate-y-1/2 z-10 h-8 w-8 bg-white/80 shadow-md hover:bg-white"
-              onClick={() => scroll("left")}
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </Button>
-          )}
-          
-          <div
-            ref={scrollRef}
-            className="flex gap-2 overflow-x-auto scrollbar-hide py-2 px-14"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        <div className="flex items-center gap-3">
+          <Button
+            variant="ghost"
+            size="icon"
+            className={`shrink-0 h-8 w-8 bg-white/80 shadow-md hover:bg-white transition-opacity ${
+              canScrollLeft ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+            onClick={() => scroll("left")}
           >
-            {systems.map((system) => (
-              <button
-                key={system}
-                onClick={() => onSystemChange(system)}
-                className={`
-                  whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium 
-                  transition-all duration-300 border
-                  ${
-                    activeSystem === system
-                      ? "bg-primary text-primary-foreground border-primary shadow-lg"
-                      : "bg-white/70 text-muted-foreground border-white/50 hover:bg-white hover:text-foreground"
-                  }
-                `}
-                style={
-                  activeSystem === system
-                    ? { boxShadow: "0 4px 20px hsl(158 64% 40% / 0.3)" }
-                    : {}
-                }
-              >
-                {system}
-              </button>
-            ))}
-          </div>
-          
-          {canScrollRight && (
-            <Button
-              variant="ghost"
-              size="icon"
-              className="absolute right-3 top-1/2 -translate-y-1/2 z-10 h-8 w-8 bg-white/80 shadow-md hover:bg-white"
-              onClick={() => scroll("right")}
+            <ChevronLeft className="h-4 w-4" />
+          </Button>
+
+          <div className="flex-1 overflow-hidden">
+            <div
+              ref={scrollRef}
+              className="flex gap-2 overflow-x-auto scrollbar-hide py-2 px-1"
+              style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
             >
-              <ChevronRight className="h-4 w-4" />
-            </Button>
-          )}
+              {systems.map((system) => (
+                <button
+                  key={system}
+                  onClick={() => onSystemChange(system)}
+                  className={`
+                    whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-medium 
+                    transition-all duration-300 border
+                    ${
+                      activeSystem === system
+                        ? "bg-primary text-primary-foreground border-primary shadow-lg"
+                        : "bg-white/70 text-muted-foreground border-white/50 hover:bg-white hover:text-foreground"
+                    }
+                  `}
+                  style={
+                    activeSystem === system
+                      ? { boxShadow: "0 4px 20px hsl(158 64% 40% / 0.3)" }
+                      : {}
+                  }
+                >
+                  {system}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <Button
+            variant="ghost"
+            size="icon"
+            className={`shrink-0 h-8 w-8 bg-white/80 shadow-md hover:bg-white transition-opacity ${
+              canScrollRight ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+            onClick={() => scroll("right")}
+          >
+            <ChevronRight className="h-4 w-4" />
+          </Button>
         </div>
 
         {/* Dynamic Description */}
