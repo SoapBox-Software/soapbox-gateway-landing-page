@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 
 export type SystemType = 
   | "EHS" 
-  | "Asset Management"
-  | "Sustainability"
   | "eQMS" 
   | "ESG"
+  | "Sustainability"
+  | "Asset Management"
   | "GRC" 
   | "BCM" 
   | "OHSM" 
