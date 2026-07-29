@@ -105,7 +105,7 @@ const SystemTabs = ({ activeSystem, onSystemChange }: SystemTabsProps) => {
           
           <div
             ref={scrollRef}
-            className="flex gap-2 overflow-x-auto scrollbar-hide py-2 px-1"
+            className="flex gap-2 overflow-x-auto scrollbar-hide py-2 px-10"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {systems.map((system) => (
