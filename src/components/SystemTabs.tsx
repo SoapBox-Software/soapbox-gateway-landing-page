@@ -7,12 +7,12 @@ export type SystemType =
   | "eQMS" 
   | "ESG"
   | "Sustainability"
-  | "Asset Management"
   | "GRC" 
   | "BCM" 
   | "OHSM" 
   | "EMS-ENV" 
   | "EMS-ENERGY" 
+  | "Asset Management"
   | "Advanced AI" 
   | "Cross Modules & Platform Services";
 
@@ -26,12 +26,12 @@ const systems: SystemType[] = [
   "eQMS",
   "ESG",
   "Sustainability",
-  "Asset Management",
   "GRC",
   "BCM",
   "OHSM",
   "EMS-ENV",
   "EMS-ENERGY",
+  "Asset Management",
   "Advanced AI",
   "Cross Modules & Platform Services",
 ];
