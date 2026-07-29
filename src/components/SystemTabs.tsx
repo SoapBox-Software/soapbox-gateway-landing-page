@@ -105,7 +105,7 @@ const SystemTabs = ({ activeSystem, onSystemChange }: SystemTabsProps) => {
           
           <div
             ref={scrollRef}
-            className="flex gap-2 overflow-x-auto scrollbar-hide py-2 px-10"
+            className="flex gap-2 overflow-x-auto scrollbar-hide py-2 px-14"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {systems.map((system) => (
@@ -136,7 +136,7 @@ const SystemTabs = ({ activeSystem, onSystemChange }: SystemTabsProps) => {
             <Button
               variant="ghost"
               size="icon"
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/80 shadow-md hover:bg-white"
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-10 h-8 w-8 bg-white/80 shadow-md hover:bg-white"
               onClick={() => scroll("right")}
             >
               <ChevronRight className="h-4 w-4" />
