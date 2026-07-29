@@ -23,10 +23,10 @@ interface SystemTabsProps {
 
 const systems: SystemType[] = [
   "EHS",
-  "Asset Management",
-  "Sustainability",
   "eQMS",
   "ESG",
+  "Sustainability",
+  "Asset Management",
   "GRC",
   "BCM",
   "OHSM",
