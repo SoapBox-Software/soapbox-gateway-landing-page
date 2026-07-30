@@ -152,7 +152,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
       modules: [
         { title: "Document & Records Control", description: "Manage documents with version control.", url: "https://id-preview--42fa2e52-fd78-40e1-b451-be0a881c8195.lovable.app/", icon: FileText },
         { title: "Training & Competency", description: "Track training and competency.", url: "https://id-preview--63ac40ad-200e-4d94-8c37-124cfbdd6334.lovable.app/", icon: GraduationCap },
-        { title: "CAPA & Issue Resolution", description: "Corrective actions and issue management.", url: "https://id-preview--bc15b9df-d511-4393-83d7-60b51db8cf1b.lovable.app/dashboard", icon: FileCheck },
+        { title: "CAPA & Issue Resolution", description: "Corrective actions and issue management.", url: "https://id-preview--055db35c-0dba-4dff-8305-e778ade69e9c.lovable.app/", icon: FileCheck },
         { title: "Nonconformance Management", description: "Handle deviations and NCRs.", url: "https://id-preview--ccd53946-f109-4566-a565-91b8f33c7e49.lovable.app/", icon: FileWarning },
         { title: "Quality Events & Incident Management", description: "Quality incident management.", url: "https://id-preview--05abec7d-6f9b-4d48-b83e-5d91a91118ea.lovable.app/", icon: AlertTriangle },
         { title: "Audit & Inspection", description: "Quality audits and inspections.", url: "https://id-preview--e9535052-108c-413f-a0aa-186a10ffa3e5.lovable.app/dashboard", icon: ClipboardCheck },
