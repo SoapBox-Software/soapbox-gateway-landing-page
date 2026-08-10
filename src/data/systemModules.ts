@@ -156,7 +156,7 @@ export const systemModules: Record<SystemType, SystemSection[]> = {
         { title: "Nonconformance Management", description: "Handle deviations and NCRs.", url: "https://id-preview--ccd53946-f109-4566-a565-91b8f33c7e49.lovable.app/", icon: FileWarning },
         { title: "Quality Events & Incident Management", description: "Quality incident management.", url: "https://id-preview--05abec7d-6f9b-4d48-b83e-5d91a91118ea.lovable.app/", icon: AlertTriangle },
         { title: "Audit & Inspection", description: "Quality audits and inspections.", url: "https://id-preview--e9535052-108c-413f-a0aa-186a10ffa3e5.lovable.app/dashboard", icon: ClipboardCheck },
-        { title: "Quality Risk Management", description: "Risk assessment for quality.", url: "https://preview--random-page.lovable.app/", icon: Shield },
+        { title: "Quality Risk Management", description: "Risk assessment for quality.", url: "https://id-preview--0cf9fdaf-35b2-44d4-9876-720e22c68604.lovable.app/", icon: Shield },
         { title: "Change Management", description: "Quality change control.", url: "https://id-preview--736491cb-a76c-4cd6-94fc-085c7c60cfe5.lovable.app/", icon: RefreshCw },
         { title: "Complaint & Customer Feedback", description: "Customer feedback management.", url: "https://id-preview--629aff38-aa42-4edd-807b-890c36a1b069.lovable.app/", icon: Megaphone },
         { title: "Supplier & Vendor Quality Management", description: "Vendor quality management.", url: "https://id-preview--32e5665f-bc7e-4f5c-ab35-27714a7bf028.lovable.app/", icon: Truck },
