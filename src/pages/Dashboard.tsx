@@ -11,7 +11,7 @@ const Dashboard = () => {
   const currentModules = systemModules[activeSystem] || [];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[#F7FBFD]">
       <Header />
       <HeroSection />
       <SystemTabs activeSystem={activeSystem} onSystemChange={setActiveSystem} />

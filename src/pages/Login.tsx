@@ -29,37 +29,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-      {/* Soft radial gradient background - white to light green tint */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#F8FDFB_0%,_#E8F5F0_100%)]" />
-      
-      {/* Subtle floating abstract shapes */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-[15%] w-32 h-32 rounded-full bg-[#2d5ab0]/8 blur-3xl" />
-        <div className="absolute top-40 right-[20%] w-48 h-48 rounded-full bg-[#4db051]/8 blur-3xl" />
-        <div className="absolute bottom-32 left-[25%] w-40 h-40 rounded-full bg-[#2d5ab0]/5 blur-3xl" />
-        <div className="absolute top-16 right-[35%] w-24 h-24 rounded-full bg-[#E8F5F0]/80 blur-2xl" />
-        <div className="absolute bottom-20 right-[15%] w-36 h-36 rounded-full bg-[#4db051]/6 blur-3xl" />
-      </div>
-
-      {/* Decorative floating UI elements at top */}
-      <div className="absolute top-6 left-1/2 -translate-x-1/2 w-full max-w-3xl h-48 pointer-events-none">
-        <div className="absolute top-8 left-[18%] w-14 h-14 rounded-2xl bg-white/70 backdrop-blur-sm border border-white/80 shadow-lg flex items-center justify-center">
-          <div className="w-7 h-7 rounded-lg bg-[#2d5ab0]/25" />
-        </div>
-        <div className="absolute top-4 left-[35%] w-10 h-10 rounded-xl bg-white/50 backdrop-blur-sm border border-white/60 shadow-md" />
-        <div className="absolute top-12 right-[18%] w-36 h-24 rounded-xl bg-white/75 backdrop-blur-sm border border-white/80 shadow-lg p-3">
-          <div className="w-full h-2.5 rounded bg-[#2d5ab0]/35 mb-2" />
-          <div className="w-4/5 h-2 rounded bg-[#D6E5DE]" />
-          <div className="w-3/5 h-2 rounded bg-[#D6E5DE] mt-1.5" />
-        </div>
-        <div className="absolute top-6 right-[38%] w-11 h-11 rounded-xl bg-[#4db051] shadow-lg flex items-center justify-center">
-          <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
-          </svg>
-        </div>
-        <div className="absolute top-20 left-[28%] w-8 h-8 rounded-lg bg-[#E8F5F0]/80 backdrop-blur-sm border border-white/60 shadow-md" />
-      </div>
+    <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-[#F7FBFD]">
       
       <div className="relative z-10 w-full max-w-md px-4 animate-fade-in mt-20">
         {/* Logo with glass chip container */}
