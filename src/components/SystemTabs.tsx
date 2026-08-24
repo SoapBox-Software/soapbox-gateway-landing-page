@@ -119,7 +119,7 @@ const SystemTabs = ({ activeSystem, onSystemChange }: SystemTabsProps) => {
                     ${
                       activeSystem === system
                         ? "bg-primary text-primary-foreground border-primary shadow-lg"
-                        : "bg-white/70 text-muted-foreground border-white/50 hover:bg-white hover:text-foreground"
+                        : "bg-transparent text-muted-foreground border-border/60 hover:bg-foreground/5 hover:text-foreground"
                     }
                   `}
                   style={
