@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Lock, Mail } from "lucide-react";
-import logo from "@/assets/logo.svg";
+import logoAsset from "@/assets/soapbox-cloud-logo.png.asset.json";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -34,13 +34,11 @@ const Login = () => {
       <div className="relative z-10 w-full max-w-md px-4 animate-fade-in mt-20">
         {/* Logo with glass chip container */}
         <div className="flex items-center justify-center mb-8">
-          <div className="bg-white/60 backdrop-blur-sm rounded-2xl px-6 py-3 border border-white/70 shadow-sm">
-            <img 
-              src={logo} 
-              alt="SOAPBOX" 
-              className="h-14"
-            />
-          </div>
+          <img
+            src={logoAsset.url}
+            alt="SoapBox.Cloud"
+            className="h-14 w-auto"
+          />
         </div>
 
         {/* Header Text */}

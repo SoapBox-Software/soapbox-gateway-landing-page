@@ -6,7 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger } from
 "@/components/ui/dropdown-menu";
-import logo from "@/assets/logo.svg";
+import logoAsset from "@/assets/soapbox-cloud-logo.png.asset.json";
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <img src={logo} alt="SOAPBOX.CLOUD" className="h-9" />
+            <img src={logoAsset.url} alt="SoapBox.Cloud" className="h-9 w-auto" />
           </div>
 
           {/* Center Nav Links */}
